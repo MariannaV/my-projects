@@ -1,0 +1,79 @@
+include ../components/head/head
+include ../components/banner/banner
+include ../components/slider/slider
+include ../components/for-bueyrs/for-bueyrs
+include ../components/for-bueyrs/for-buyer-item
+include ../components/popup/callback
+include ../components/popup/popup-order
+include ../components/total-cost/total-cost
+
+doctype html
+html(lang="ru")
+	head
+		+head({
+			"title": "Главная",
+			"description": "Главная страница",
+			"style_page": "styles/index.css"})
+		link(href="js/owl.carousel/owl.carousel.css" rel="stylesheet")
+		link( href="js/owl.carousel/owl.theme.default.css" rel="stylesheet")
+
+body.main-page
+	+banner-block()
+	+slider()
+	+for-bueyrs()
+	//- section.for-buyers-section
+		equipment-container
+			p.select 
+			optional-equipment
+				counter 3
+				optional-equipment-price.only-price 8500
+				delete-optional-eqipment 
+			optional-equipment.driver 
+				input(type="checkbox" id="equipment")
+				label(for="equipment")
+				optional-equipment-img
+					img(src="../img/weight.png", alt="")
+				h6.item Драйвер
+				p Драйвер для весов серии ШТРИХ-Слим
+				counter 3
+				optional-equipment-price.only-price 1000
+				delete-optional-eqipment
+			optional-equipment.alone
+				input(type="checkbox" id="equipment")
+				label(for="equipment")
+				optional-equipment-img
+					img(src="../img/weight.png", alt="")
+				h6.item Переходник
+				p Для весов CAS
+				counter 3
+				optional-equipment-price.only-price 8500
+				delete-optional-eqipment 
+		select-system-block
+			p.select Выберите систему товароучета
+			systems-block
+				input(type="radio" id="system")
+				label(for="system")
+				system-block-description.items-block
+					img(src="../img/1C.png", alt="")
+					h6 1С:Розница				
+				system-price.prices
+					div 700
+					span / месяц
+	
+	+total-cost()
+	//- #popup-demo
+	//- 	h6 Всплывающие окна:
+	//- 	label.solution-button(for="popup-callback-checkbox") Заказать звонок
+	//- 	label(for="popup-order-checkbox").solution-button Показать выписку
+	+popup-callback()
+	+popup-order()
+	
+
+
+
+
+script(src="js/jquery/jquery.min.js" defer)
+script(src="js/owl.carousel/owl.carousel.js" defer)
+script(src="js/slider/index.js" defer)
+
+

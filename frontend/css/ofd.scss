@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+}
+
+.page-with-platform-ofd {
+    margin: 0;
+    p.home-page {
+        @media (min-width: 1600px) {
+            display: none;
+        }
+    }
+}
+
+.banner-block-ofd {
+    @media (min-width: 1024px) {
+        display: flex;
+    }
+    @media (min-width:1600px) {
+        display: flex;
+        padding-top: 96px;
+        padding-left: 13.8vw;
+        padding-bottom: 96px;
+        padding-right: 13.8vw;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+.banner-information-ofd {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 768px) {
+        flex-direction: column;
+        display: flex;
+    }
+    @media (min-width: 768px) and (max-width: 1599px) {
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    .title-sbis {
+        color: #00476C;
+    }
+    .title-platform-ofd {
+        color: #25606D;
+    }
+    .banner-information-ofd-title {
+        font-family: "Museo Sans" Cyrl;
+        line-height: 68px;
+        font-size: 48px;
+        font-weight: 700;
+        color: #25606D;
+    }
+    .banner-information-ofd-p {
+        font-family: "Museo Sans" Cyrl;
+        line-height: 29px;
+        font-size: 20px;
+        color: #333333;
+        font-weight: 100;
+        width: 470px;
+    }
+    h1+p {
+        margin-top: 50px;
+    }
+}
+
+.block-with-title {
+    background-image: url("/themes/evotor/assets/i/platform-ofd-title.svg");
+    background-size: 224px 73px;
+    background-repeat: no-repeat;
+}
+
+.platform-banner-form {
+    @media (min-width: 1600px) {
+        position: absolute;
+        top: 26%;
+        right: 11%;
+    }
+}
+
+.ofd-form-connection {
+    display: flex;
+    width: 645px;
+    align-items: center;
+}
+
+.form-for-connection-tarrifs {
+    margin-top: 8px;
+    width: 360px;
+    margin-left: auto;
+    border-radius: 4px;
+    box-shadow: 1px 0 18px rgba(128, 132, 153, 0.5);
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-right: auto;
+    text-align: center;
+    @media (min-width: 1599px) {
+        box-shadow: none;
+        margin-top: 80px;
+    }
+}
+
+.tariffs-outside {
+    width: 310px;
+    display: none;
+    @media(min-width: 1599px) {
+        display: block;
+    }
+}
+
+.ofd-placeholder::placeholder {
+    color: #D8DCE6;
+}
+
+.banner-img {
+    display: none;
+    @media (min-width: 768px) {
+        display:flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    @media (min-width: 1024px) {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    @media (min-width:1600px) {
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.container-for-connection {
+    padding: 20px;
+    @media (min-width: 768px) {
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    @media (min-width:1024px) {
+        padding-left: 13.8vw;
+        padding-right: 13.8vw;
+    }
+}
+
+.title-of-block-for-connection {
+    font-family: "Museo Sans" Cyrl;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.ofd_buttom_form+.user-agreement {
+    margin-top: 24px;
+    @media (min-width: 768px) {
+        margin-top: 37px;
+    }
+}
+
+.ofd-form-connection+.ofd-form-connection {
+    margin-top: 8px;
+}
+
+.blue-title {
+    color: #25606D;
+}
+
+.sbis-blue-title {
+    color: #00476C;
+}
+
+.container-for-connection {
+    padding: 20px;
+    @media (min-width: 768px) {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
+
+.block-for-connection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 240px);
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.ofd_logo+.container-for-block-with-tariffs {
+    margin-top: 27px;
+    @media (min-width: 768px) {
+        margin-top: 0;
+    }
+}
+
+.container-for-block-with-tariffs {
+    text-align: left;
+}
+
+.container-for-block-with-tariffs.tariffs-inside {
+    @media (min-width: 1600px) {
+        display: none;
+    }
+}
+
+.form-for-connection {
+    width: 600px;
+}
+
+.block-with-tariffs-title+.tariff-block {
+    margin-top: 12px;
+}
+
+.tariff-block {
+    color: #FFFFFF;
+    padding: 16px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-family: "Museo Sans" Cyrl;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 300;
+    & span {
+        line-height: 51px;
+        font-size: 36px;
+        font-weight: 600;
+        &:after {
+            content: "";
+            background-image: url(https://kkt365.ru/themes/evotor/assets/i/rur.svg);
+            min-width: 27px;
+            min-height: 25px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position-x: 6px;
+        }
+    }
+    &.light-blue {
+        border-color: #87D1D5;
+        background-color: #87D1D5;
+    }
+    &.blue {
+        border-color: #499FA3;
+        background-color: #499FA3;
+    }
+    &.dark-blue {
+        border-color: #25606D;
+        background-color: #25606D;
+    }
+    &.sbis-light-blue {
+        background-color: #53AEE4;
+        border-color: #53AEE4;
+    }
+    &.sbis-blue {
+        border-color: #0172B5;
+        background-color: #0172B5;
+    }
+    &.sbis-dark-blue {
+        border-color: #00476C;
+        background-color: #00476C;
+    }
+    &+.tariff-block {
+        margin-top: 8px;
+    }
+    .price-ofd {
+        background-image: url("https://kkt365.ru/themes/evotor/assets/i/rur.svg");
+        background-size: 14px 19px;
+        background-repeat: no-repeat;
+        background-position-x: 66%;
+        background-position-y: 64%;
+    }
+}
+
+.block-for-connection-description {
+    font-family: "Museo Sans" Cyrl;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.block-with-information-of-connection-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.container-with-information-about-ofd {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    background-color: #F8F8F8;
+    padding: 20px;
+    grid-auto-columns: 280px;
+    justify-content: center;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(30%, 370px));
+        grid-gap: 5%;
+        padding: 45px 7vw;
+    }
+    @media (min-width: 1024px) {
+        padding: 45px 13.8vw;
+    }
+}
+
+.description-ofd {
+    font-family: "Museo Sans" Cyrl;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333;
+    & span {
+        font-weight: 600;
+    }
+}
+
+.block-description-ofd-title {
+    font-family: "Museo Sans" Cyrl;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.block-description-ofd-title+.description-ofd {
+    margin-top: 20px;
+}
+
+.block-with-description-ofd+.block-with-description-ofd {
+    // margin-top: 36px;
+    @media (min-width: 768px) {
+        // margin-top: 0;
+    }
+}
+
+.illustrattion-block {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+        padding: 54px 7vw 96px 7vw;
+    }
+    @media (min-width:1024px) {
+        padding-left: 13.8vw;
+        padding-right: 13.8vw;
+    }
+}

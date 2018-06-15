@@ -1,0 +1,252 @@
+@import "helpers/_postcss-reset.scss";
+@import "fonts/fonts.scss";
+@import "helpers/_variables.scss";
+@import "helpers/_base.scss";
+@import "../components/banner/banner.scss";
+@import "../components/slider/slider.scss";
+@import "../components/for-bueyrs/for-bueyrs.scss";
+@import "../components/popup/callback.scss";
+@import "../components/popup/popup-order.scss";
+@import "../components/total-cost/total-cost.scss";
+
+body {
+  font-family: "Museo Sans", sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-page {
+  & > banner-block,
+  & > .cashbox-slider,
+  & > .for-buyers-container,
+  & > total-cost-block,
+  & > #popup-demo {
+    @media ($min-desktop) {
+      padding-left: calc((100vw - $desktop) / 2);
+      padding-right: calc((100vw - $desktop) / 2);
+    }
+  }
+}
+
+
+
+// -------------------------
+
+
+optional-equipment-block {
+  display: block;
+
+  equipment-container {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+// ------------------------------
+select-system-block {
+  display: block;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 49px;
+  padding-right: 20px;
+}
+
+systems-block {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #d8dce6;
+  border-radius: 5px;
+  padding-top: 22px;
+  padding-left: 21px;
+  padding-bottom: 26px;
+
+  label {
+    border: 1px solid #d8dce6;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    order: 2;
+  }
+
+  input {
+    display: none;
+  }
+
+  system-price {
+    order: 3;
+  }
+}
+
+system-block-description {
+  display: flex;
+  align-items: center;
+  order: 1;
+  width: 100%;
+  margin-bottom: 15px;
+
+  & + system-price {
+    margin-left: 15px;
+  }
+
+  img {
+    & + h6 {
+      margin-left: 19px;
+    }
+  }
+
+  h6 {
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 18px;
+    color: #21243c;
+  }
+}
+
+// ----------------------
+
+services-block {
+  display: block;
+}
+
+select-service-block {
+  display: block;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 49px;
+  padding-right: 20px;
+}
+
+system-block-description {
+  display: flex;
+  // border: 1px solid #d8dce6;
+  border-radius: 5px;
+  padding-top: 22px;
+  padding-left: 21px;
+  padding-bottom: 26px;
+}
+
+service-block {
+  display: flex;
+  border: 1px solid #d8dce6;
+  border-radius: 5px;
+  padding-top: 22px;
+  padding-left: 21px;
+  padding-bottom: 26px;
+}
+// ТОЛЬКО ЦЕНА--------------
+.only-price {
+  display: inline-block;
+  line-height: 51px;
+  font-size: 36px;
+  color: #333333;
+
+  &::after {
+    content: "";
+    background-image: url("../img/rub.svg");
+    min-width: 13px;
+    min-height: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 7px;
+  }
+}
+// ЦЕНЫ/МЕС-----------------
+.prices {
+  display: flex;
+  align-items: baseline;
+  line-height: 51px;
+  font-size: 36px;
+  color: #333333;
+
+  div {
+    &::after {
+      content: "";
+      background-image: url("../img/rub.svg");
+      min-width: 13px;
+      min-height: 18px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      margin-left: 10px;
+    }
+  }
+
+  span {
+    display: inline-block;
+    line-height: 22px;
+    font-size: 16px;
+    color: #b8c0d1;
+  }
+}
+
+// ------------------------
+
+
+
+
+
+
+// ______________________________________
+
+
+// // _____________________________ ВЫБЕРИТЕ УСЛУГИ
+// .for-buyers-section {
+//   & + & {
+//     margin-top: 62px;
+
+//     @media ($min-desktop) {
+//       margin-top: 123px;
+//     }
+//   }
+// }
+
+
+#popup-demo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  & > h6 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  & > label {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+
+#popup-order-checkbox {
+  display: none;
+}
+
+#popup-order-checkbox:not(:checked) + popup-order-block {
+  display: none;
+}
+
+total-cost-block .solution-button {
+  display: inline-block;
+  text-align: center;
+}
+
+.checkbox-switch:not(:checked) + * {
+  display: none;
+}

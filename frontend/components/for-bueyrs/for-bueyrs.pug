@@ -1,0 +1,201 @@
+mixin for-bueyrs()
+  .for-buyers-container
+    h2.for-buyers-title Для удобства
+    section.for-buyers-section
+      h3.for-buyers-section-title <span number='1' all='3'>/</span> Выберите дополнительное оборудование
+      .for-buyers-items
+        +for-buyer-item({          
+          id: "equipment-1",
+          title: "Весы",
+          description: "ШТРИХ-Слим 300М 15-2,5 Д1Н",
+          img: "weight.png",
+          amount: "1",
+          price:"8500"
+          })
+        article.for-buyer-item
+          input(type="checkbox" id="equipment-1").for-buyer-item-checkbox
+          label(for="equipment-1").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/weight.png", alt="")
+          .for-buyer-item-title
+            h6 Весы
+            p ШТРИХ-Слим 300М 15-2,5 Д1Н
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 8500 <span />
+          .for-buyer-item-close
+        article.for-buyer-item.no-margin-top
+          input(type="checkbox" id="equipment-2").for-buyer-item-checkbox
+          label(for="equipment-2").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/driver-1.jpg", alt="")
+          .for-buyer-item-title
+            h6 Драйвер
+            p Драйвер для весов серии ШТРИХ-Слим
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 1000 <span />
+          .for-buyer-item-close
+
+        article.for-buyer-item
+          input(type="checkbox" id="equipment-3").for-buyer-item-checkbox
+          label(for="equipment-3").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/item-2.png", alt="")
+          .for-buyer-item-title
+            h6 Переходник
+            p Для весов CAS
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 300 <span />
+          .for-buyer-item-close
+
+        article.for-buyer-item
+          input(type="checkbox" id="equipment-4").for-buyer-item-checkbox
+          label(for="equipment-4").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/item-3.png", alt="")
+          .for-buyer-item-title
+            h6 Дисплей покупателя
+            p ШТРИХ-Т D2-USB-MW
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 3300 <span />
+          .for-buyer-item-close
+        article.for-buyer-item.no-margin-top
+          input(type="checkbox" id="equipment-5").for-buyer-item-checkbox
+          label(for="equipment-5").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/driver-2.jpg", alt="")
+          .for-buyer-item-title
+            h6 Драйвер
+            p Драйвер для дисплея покупателя ШТРИХ-Т
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 1000 <span />
+          .for-buyer-item-close
+
+        article.for-buyer-item
+          input(type="checkbox" id="equipment-7").for-buyer-item-checkbox
+          label(for="equipment-7").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/item-4.png", alt="")
+          .for-buyer-item-title
+            h6 Денежный ящик
+            p АТОЛ 410
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 3500 <span />
+          .for-buyer-item-close
+
+        article.for-buyer-item
+          input(type="checkbox" id="equipment-8").for-buyer-item-checkbox
+          label(for="equipment-8").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/item-5.png", alt="")
+          .for-buyer-item-title
+            h6 Сканер штрихкодов
+            p АТОЛ SB 1101
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 2200 <span />
+          .for-buyer-item-close
+
+        article.for-buyer-item
+          input(type="checkbox" id="equipment-9").for-buyer-item-checkbox
+          label(for="equipment-9").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/item-6.png", alt="")
+          .for-buyer-item-title
+            h6 Принтер этикеток
+            p АТОЛ BP-21
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 8500 <span />
+          .for-buyer-item-close
+        article.for-buyer-item.no-margin-top
+          input(type="checkbox" id="equipment-10").for-buyer-item-checkbox
+          label(for="equipment-10").for-buyer-item-label
+          .for-buyer-item-img
+            img(src="../img/driver-3.jpg", alt="")
+          .for-buyer-item-title
+            h6 Драйвер
+            p Для принтера АТОЛ BP-21
+          .for-buyer-item-amount
+            button.for-buyer-item-amount-minus
+            .for-buyer-item-amount-value 1
+            button.for-buyer-item-amount-plus
+          .for-buyer-item-price 1000 <span />
+          .for-buyer-item-close
+
+
+    section.for-buyers-section
+      h3.for-buyers-section-title <span number='2' all='3'>/</span> Выберите систему товароучёта
+      .for-buyers-items      
+        article.for-buyer-item
+          input(type="radio" id="system-1" name='system').for-buyer-item-radio
+          label(for="system-1").for-buyer-item-label
+          img(src="../img/system-1.jpg", alt="").for-buyer-item-img
+          .for-buyer-item-title
+            h6 1C:Розница
+            p Полная версия программы 1С:Розница в облаке ГК ЛАД 
+          .for-buyer-item-price 700 <span>/месяц</span>
+        article.for-buyer-item
+          input(type="radio" id="system-2" name='system').for-buyer-item-radio
+          label(for="system-2").for-buyer-item-label
+          img(src="../img/system-2.jpg", alt="").for-buyer-item-img
+          .for-buyer-item-title
+            h6 Интеграция с текущей 1С
+            p Интеграция терминалов Эвотор с программами 1С
+          .for-buyer-item-price 300 <span>/месяц</span>
+        article.for-buyer-item
+          input(type="radio" id="system-3" name='system').for-buyer-item-radio
+          label(for="system-3").for-buyer-item-label
+          img(src="../img/system-3.jpg", alt="").for-buyer-item-img
+          .for-buyer-item-title
+            h6 Excel + приложение обмен через Excel
+            p Загрузка / выгрузка номенклатуры, документов в формате Excel
+          .for-buyer-item-price 250 <span>/месяц</span>
+    section.for-buyers-section
+      h3.for-buyers-section-title <span number='3' all='3'>/</span> Выберите услугу
+      .section-with-service-articles
+        article.items-block-service.active
+          img.items-block-service-img(src="../img/ofd.svg", alt="")
+          .article-description
+            p.service-title Подключение к ОФД
+            service-price.only-price 3000
+            button.select-service  Выбрано
+        article.items-block-service
+          img.items-block-service-img(src="../img/ofd.svg", alt="")
+          .article-description
+            p.service-title Настройка, обучение
+            service-price.only-price 2500
+            button.select-service  Выбрать услугу
+        article.items-block-service
+          img.items-block-service-img(src="../img/ofd.svg", alt="")
+          .article-description
+            p.service-title Услуги по регистрации
+            service-price.only-price 1500
+            button.select-service  Выбрать услугу
+        article.items-block-service
+          img.items-block-service-img(src="../img/ofd.svg", alt="")
+          .article-description
+            p.service-title Техподдержка HelpMe
+            service-price.only-price 550
+            button.select-service  Выбрать услугу
