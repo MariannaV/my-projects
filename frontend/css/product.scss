@@ -1,8 +1,26 @@
 // .product-page-breadcrumbs {
 // }
+.main-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items-container {
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
+// .container {
+//     @media (max-width: 767px) {
+//         display: none;
+//     }
+// }
 .block-with-price {
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: center;
 }
 
@@ -101,6 +119,7 @@
 
 .container-with-products-title {
     margin-left: 20px;
+    margin-top: 45px;
     @media(min-width: 768px) {
         margin-left: 13.8vw;
     }
@@ -136,6 +155,12 @@
 .block-with-description {
     padding-right: 300px;
     padding-top: 40px;
+}
+
+.block-with-product-container {
+    @media(min-width: 768px) {
+        display: none;
+    }
 }
 
 .container-with-products {
@@ -201,9 +226,8 @@
 .container-with-details {
     display: block;
     @media (max-width: 1023px) {
-        padding-top: 77px;
-        padding-left: 19px;
-        padding-right: 22px
+        padding-top: 77px; // padding-left: 19px;
+        // padding-right: 22px
     }
 }
 
@@ -220,11 +244,59 @@
         font-weight: 500;
         letter-spacing: 1.2px;
         padding: 30px 30px 29px 31px;
-        border: 1px solid #B8C0D1;
+        border-top: 1px solid #B8C0D1;
+        border-bottom: 1px solid #B8C0D1;
         cursor: pointer;
         background-color: #EDEFF5;
+        width: 100%;
     }
     &>input {
         display: none;
     }
+}
+
+.details-block>input:checked~.details-content:first-of-type {
+    max-height: 9999px;
+}
+
+.details-block>input:not(:checked)~.details-content {
+    display: none;
+}
+
+.details-content-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 44px;
+}
+
+.navigation-block {
+    display: flex;
+}
+
+.nav-block {
+    &>label {
+        display: block;
+        line-height: 19px;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        padding: 30px 30px 29px 31px;
+        border-top: 1px solid #B8C0D1;
+        border-bottom: 1px solid #B8C0D1;
+        cursor: pointer;
+        background-color: #EDEFF5;
+        width: 100%;
+    }
+    &>input {
+        display: none;
+    }
+}
+
+.nav-block>input:checked~.details-content:first-of-type {
+    max-height: 9999px;
+}
+
+.nav-block>input:not(:checked)~.details-content {
+    display: none;
 }
