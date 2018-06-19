@@ -3,6 +3,7 @@
 }
 
 .ofd-slider-list {
+    margin: 0;
     @media (max-width: 767px) {
         flex-wrap: wrap;
     }
@@ -10,6 +11,7 @@
 
 .ofd-slider-nav {
     display: none;
+    padding-right: calc(45px + 20px);
     @media (min-width: 1600px) {
         position: absolute;
         display: flex;
@@ -63,11 +65,14 @@
     }
 }
 
-.ofd-slider-nav-buttons+.ofd-slider-nav-arrows {
-    margin-left: 20px;
-}
-
+// .ofd-slider-nav-buttons+.ofd-slider-nav-arrows {
+//     // margin-left: 20px;
+// }
 .ofd-slider-nav-arrows {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50%);
     &-left,
     &-right {
         width: 10px;
@@ -75,14 +80,19 @@
         background-color: initial;
         border: initial;
         background-repeat: no-repeat;
-        background-size: 8px 8px;
-        background-position-y: 2px;
+        background-size: 9px 11px;
+        background-position-y: 4px;
+        background-position-x: 6px;
     }
     &-left {
         background-image: url("https://kkt365.ru/themes/evotor/assets/i/arrow-left.svg");
+        width: 20px;
+        height: 20px;
     }
     &-right {
         background-image: url("https://kkt365.ru/themes/evotor/assets/i/arrow-right.svg");
+        width: 20px;
+        height: 20px;
     }
     &-left+&-right {
         margin-left: 1px;

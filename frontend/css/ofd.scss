@@ -111,7 +111,7 @@ body {
     @media (min-width: 768px) {
         width: 360px;
     }
-    @media (min-width: 1599px) {
+    @media (min-width: 1600px) {
         box-shadow: none; // margin-top: 80px;
         margin-top: 30px;
     }
@@ -120,7 +120,7 @@ body {
 .tariffs-outside {
     width: 310px;
     display: none;
-    @media(min-width: 1599px) {
+    @media(min-width: 1600px) {
         display: block;
     }
 }
@@ -146,7 +146,7 @@ body {
         display: flex;
         position: absolute;
         left: 0;
-        top: 0;
+        top: -32px;
         width: 100%;
         height: 100%;
         z-index: -1;
@@ -155,7 +155,7 @@ body {
         display: flex;
         position: absolute;
         left: 0;
-        top: 0;
+        top: -32;
         width: 100%;
         height: 100%;
         z-index: -1;
@@ -185,6 +185,9 @@ body {
     font-weight: 500;
     color: #333333;
     text-align: center;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 .ofd_buttom_form+.user-agreement {
