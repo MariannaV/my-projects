@@ -953,74 +953,73 @@
 
                         </div>
                     </div>
-                </div>
-                <div class="item-for-buy">
+                    <div class="item-for-buy">
 
-                    <img class="item-for-buy-img" alt="" src="https://kkt365.ru/storage/temp/public/7fe/af1/847/thumb_7feaf184717616907802594cc79d6a731522071555_300x255_auto.png"
-                    />
-                    <div class="description-item">
-                        <p class="items-with-goods-p">Фискальный накопитель на 13 мес. с договором ОФД на 1 год</p>
+                        <img class="item-for-buy-img" alt="" src="https://kkt365.ru/storage/temp/public/7fe/af1/847/thumb_7feaf184717616907802594cc79d6a731522071555_300x255_auto.png"
+                        />
+                        <div class="description-item">
+                            <p class="items-with-goods-p">Фискальный накопитель на 13 мес. с договором ОФД на 1 год</p>
 
-                        <div class="price-with-button">
+                            <div class="price-with-button">
 
-                            <div class="items-with-goods-price">9000</div>
-                            <button class="button-basket" onclick="this.classList.toggle('active')"></button>
+                                <div class="items-with-goods-price">9000</div>
+                                <button class="button-basket" onclick="this.classList.toggle('active')"></button>
+                            </div>
+
+
                         </div>
+
 
 
                     </div>
 
 
 
+
+
+
                 </div>
-
-
-
-
-
-
-            </div>
         </section>
-    </div>
+        </div>
 
 
 
-    <!-- <button class="rev button-basket-popup">
+        <!-- <button class="rev button-basket-popup">
         <span class="open ">В корзину</span>
         <div class="hidd"></div>
     </button> -->
 
 
-    <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
+        <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
 
-    <div class="js-container hidden" style="display: block;">
+        <div class="js-container hidden" style="display: block;">
 
-    </div>
-
-
+        </div>
 
 
 
-    <script>
-        ; (function ($D) {
-            var $button = $D.querySelector('.js-button'),
-                $container = $D.querySelector('.js-container');
-
-            $button.addEventListener('click', function (e) {
-                var data = e.target.dataset,
-                    toggleText = $button.innerHTML,
-                    isVisible = $container.style.display == 'block';
-
-                $button.innerHTML = data.toggleText;
-                data.toggleText = toggleText;
-
-                $container.style.display = isVisible ? 'none' : 'block';
-            });
-        })(document);
-    </script>
 
 
-    <!-- <script>$('.rev').on('click', '.open', function () {
+        <script>
+            ; (function ($D) {
+                var $button = $D.querySelector('.js-button'),
+                    $container = $D.querySelector('.js-container');
+
+                $button.addEventListener('click', function (e) {
+                    var data = e.target.dataset,
+                        toggleText = $button.innerHTML,
+                        isVisible = $container.style.display == 'block';
+
+                    $button.innerHTML = data.toggleText;
+                    data.toggleText = toggleText;
+
+                    $container.style.display = isVisible ? 'none' : 'block';
+                });
+            })(document);
+        </script>
+
+
+        <!-- <script>$('.rev').on('click', '.open', function () {
             var hBlock = $(this).siblings('.hidd');
             $(this).text(hBlock.is(':visible') ? 'В корзину' : 'Добавлено');
             hBlock.toggle('slow');
