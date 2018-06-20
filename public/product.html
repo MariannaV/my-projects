@@ -32,9 +32,21 @@
 
 <body>
     <!-- #Комментарии - Краткая инфа товара# -->
+
+
+
     <div class="bg--white">
         <div class="container">
-            <div class="catalog__item catalog__item_detail" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/Product">
+            <button class="button-basket-outside">
+
+
+                <div class="counter-value">1
+                    <span class="counter-item">товар</span>
+                </div>
+                <div class="counter-amount">123 456</div>
+
+            </button>
+            <div class="catalog__item catalog__item_detail" itemprop="itemListElement" item scope="" itemtype="http://schema.org/Product">
 
                 <div class="hidden-xs">
                     <br>
@@ -143,28 +155,7 @@
 
     <!--навигация по деталям-->
 
-    <div class="navigation-block">
 
-
-        <div class="nav-block">
-            <input type="radio" name="equipment" id="equipment-3" value="on">
-            <label for="equipment-3">Задать вопрос</label>
-        </div>
-
-
-        <div class="nav-block">
-            <input type="radio" name="equipment" id="equipment-0" value="on" checked="">
-            <label for="equipment-0">Описание</label>
-        </div>
-        <div class="nav-block">
-            <input type="radio" name="equipment" id="equipment-1" value="on">
-            <label for="equipment-1">Характеристики</label>
-        </div>
-        <div class="nav-block">
-            <input type="radio" name="equipment" id="equipment-2" value="on">
-            <label for="equipment-2">Условия оплаты и доставки</label>
-        </div>
-    </div>
 
 
 
@@ -173,8 +164,29 @@
 
 
     <div class="container-with-details">
+        <div class="details-navigation">
 
-        <div class="details-blocks" style="min-height: 280px;">
+
+
+            <div class="nav-block">
+
+                <label for="equipment-0">Описание</label>
+            </div>
+            <div class="nav-block">
+
+                <label for="equipment-1">Характеристики</label>
+            </div>
+            <div class="nav-block">
+                <input type="radio" name="equipment" id="equipment-2" value="on">
+                <label for="equipment-2">Условия оплаты и доставки</label>
+            </div>
+            <div class="nav-block">
+
+                <label for="equipment-3">Задать вопрос</label>
+            </div>
+
+        </div>
+        <div class="details-blocks">
             <div class="details-block">
                 <input type="radio" name="equipment" id="equipment-0" value="on" checked="">
                 <label for="equipment-0">Описание</label>
@@ -646,172 +658,174 @@
 
                 </div>
             </div>
-        </div>
-        <div class="details-block">
-            <input type="radio" name="equipment" id="equipment-2" value="on">
-            <label for="equipment-2">Условия оплаты и доставки</label>
-            <div class="details-content">
-                <div class="details-content-text">
+            <div class="details-block">
+                <input type="radio" name="equipment" id="equipment-2" value="on">
+                <label for="equipment-2">Условия оплаты и доставки</label>
+                <div class="details-content">
+                    <div class="details-content-text">
 
-                    <p class="text--medium text--bold-medium nomargintop">Условия доставки</p>
-                    <p>Мы доставляем товар по России с помощью транспортной компании DPD. Сроки доставки зависят от пункта назначения.
-                        Например в Хабаровск отправление будет ехать 10-12 рабочих дней. Вы можете отследить ваш заказ по
-                        номеру накладной или номеру заказа интернет-магазина
-                        <a href="https://www.dpd.ru" target="_blank">на сайте</a>.
-                    </p>
-                    <p>Точные сроки доставки определяются в зависимости от состава вашего заказа и наличия товара на складе.
-                        По уточнению сроков с вами свяжется менеджер.</p>
-                    <br>
-                    <div class="hidden-xs">
-                        <br>
-                    </div>
-                    <p class="text--medium text--bold-medium nomargintop">Оплата</p>
-                    <ol class="list-ol">
-                        <li class="list-ol__item">Вы можете оплатить заказ банковской картой или по&nbsp;счету. Мы работаем только по&nbsp;100% предоплате.
-                        </li>
-                        <li class="list-ol__item">Доступные способы оплаты заказов:
-                            <br>
-                            <br>
-                            <!--Поместите этот код в тег <head> вашей страницы-->
-                            <script src="https://www.walletone.com/merchant/widget/1.0.2/script.js"></script>
-
-                            <!--Поместите этот код в то место разметки вашей страницы, где должен быть виджет W1-->
-                            <div id="w1widget">
-                                <div class="w1-widget  __transparent-bg">
-                                    <div class="w1-widget_header">
-                                        <a class="w1-pay-types-link" href="https://www.walletone.com/ru/merchant/payments" target="_blank" title="Payment by Wallet one"></a>
-                                    </div>
-                                    <div class="w1-widget_provider-list">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/CreditCardRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/QiwiWalletRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/WalletOneRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/SberOnlineRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/TinkoffRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/EurosetRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/BankTransferRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/SvyaznoyRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/CashTerminalRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/AlfaclickRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/PsbRetailRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/FakturaruRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/ContactRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/UnistreamRUB.png?type=pt&amp;w=70&amp;h=70">
-                                        <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/RussianPostRUB.png?type=pt&amp;w=70&amp;h=70"> </div>
-                                </div>
-                            </div>
-                            <script>
-                                W1.widget({
-                                    "pt": "CreditCardRUB,QiwiWalletRUB,WalletOneRUB,SberOnlineRUB,TinkoffRUB,EurosetRUB,BankTransferRUB,SvyaznoyRUB,CashTerminalRUB,AlfaclickRUB,PsbRetailRUB,FakturaruRUB,ContactRUB,UnistreamRUB,RussianPostRUB",
-                                    "logosSize": "small",
-                                    "grayscale": false,
-                                    "background": "transparent",
-                                    "fixWidth": "",
-                                    "container": "w1widget"
-                                });
-                            </script>
-                            <br>Для того, чтобы оплатить товар по&nbsp;счету, напишите нам:
-                            <a href="mailto:evotor@lad24.ru" class="link">evotor@lad24.ru</a>. В&nbsp;теме письма укажите «Нужен счет на&nbsp;оплату».
-                        </li>
-                        <li class="list-ol__item">Вы сможете проверить соответствие комплектации заказа и&nbsp;исправность товара в&nbsp;присутствии
-                            курьера.
-                        </li>
-                    </ol>
-                    <b>Договор оферты:</b>
-                    <a href="/storage/app/media/pubofertaevolad.pdf" download="download">Скачать</a>.
-                    <br>
-                    <b>Договор оферты Промсвязьбанка:</b>
-                    <a href="/storage/app/media/pubofertaevoPromsvyazbank.pdf" download="download">Скачать</a>.
-                    <br>
-                    <br>
-                    <br>
-                    <h2 class="text--medium text--bold-medium ">Реквизиты ООО «Эво-Лад»</h2>
-                    <ul class="list">
-
-                        <li class="list__item list__item_no list__item_0">Полное наименование: </li>
-                        <li class="list__item list__item_no list__item_0">Общество с&nbsp;ограниченной ответственностью «Эво-Лад» </li>
-                        <li class="list__item list__item_no list__item_0">Почтовый адрес: 603093, г.&nbsp;Нижний Новгород, а/я&nbsp;82, ГК Лад </li>
-                        <li class="list__item list__item_no list__item_0">ОГРН: 1165275051567 </li>
-                        <li class="list__item list__item_no list__item_0">ИНН: 5260432393 </li>
-                        <li class="list__item list__item_no list__item_0">Контакты: 8 (800)&nbsp;775-85-25</li>
-
-                    </ul>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-    <div class="details-block">
-        <input type="radio" name="equipment" id="equipment-3" value="on">
-        <label for="equipment-3">Задать вопрос</label>
-        <div class="details-content">
-            <div class="details-content-text">
-                <form method="POST" data-request="form_dynamic::onRequest" class="form form_null" data-request-data="id:21" data-request-update="'form_dynamic::answer':'#answer21'"
-                    data-request-success="form__success(data, $(this))">
-                    <div class="form__wrap">
-
-                        <p class="text3--black text--regular text--medium34 text--medium24-mobile nomargin">Задайте свой вопрос</p>
-                        <div class="hidden-xs">
-                            <br>
-                            <br>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-9 vcenter col-xs-24 center-mobile">
-                                <input type="text" class="form__input form__input_inline-center form__input_inline-center-required" name="name" placeholder="Ваше имя *">
-                                <input type="text" class="form__input form__input_inline-center" name="email" placeholder="Электронная почта *">
-                                <input type="text" class="form__input form__input_inline-center" name="phone" placeholder="Телефон ">
-                            </div>
-                            <!--
-                                -->
-                            <div class="col-md-1 hidden-xs vcenter">&nbsp;</div>
-                            <!--
-                                -->
-                            <div class="col-md-14 vcenter col-xs-24 ">
-                                <p class="text--medium text--bold form__text_inline-center form__text_inline-center-hm">Текст сообщения:</p>
-                                <textarea class="form__textarea form__textarea_inline-center form__textarea_nomax" name="message" placeholder="Задайте свой вопрос в этой форме, ответ мы пришлем на вашу почту"></textarea>
-                            </div>
-                        </div>
-
-                        <input type="text" class="form__input form__input_hide" name="other" placeholder="Дополнительно">
-                        <input type="hidden" name="comment" value="Задать вопрос из карточка товара">
-                        <input type="hidden" name="target" value="ask_question_product">
-                        <input type="hidden" name="target_category" value="">
-                        <input type="hidden" name="target_action" value="">
-                        <div class="hidden-xs">
-                            <br>
-                        </div>
-                        <p class="text--center text--gray text--small12">
-                            <input id="i_agree" class="checkbox checkbox_orange" type="checkbox" value="1">
-                            <label for="i_agree">
-                                Я согласен на обработку моих персональных данных.
-                                <a href="/catalog/politicy" class="link link_border link_border-gray  text--gray">Пользовательское соглашение</a>
-                            </label>
+                        <p class="text--medium text--bold-medium nomargintop">Условия доставки</p>
+                        <p>Мы доставляем товар по России с помощью транспортной компании DPD. Сроки доставки зависят от пункта
+                            назначения. Например в Хабаровск отправление будет ехать 10-12 рабочих дней. Вы можете отследить
+                            ваш заказ по номеру накладной или номеру заказа интернет-магазина
+                            <a href="https://www.dpd.ru" target="_blank">на сайте</a>.
                         </p>
-                        <div class="visible-xs">
+                        <p>Точные сроки доставки определяются в зависимости от состава вашего заказа и наличия товара на складе.
+                            По уточнению сроков с вами свяжется менеджер.</p>
+                        <br>
+                        <div class="hidden-xs">
                             <br>
                         </div>
-                        <div class="row">
-                            <div class="col-md-7 hidden-xs">&nbsp;</div>
-                            <div class="col-md-10  col-xs-24">
-                                <input type="submit" class="form__button form__button_inline-center text--bold-medium text--medium center-mobile-block button disabled"
-                                    disabled="disabled" name="send" value="Отправить вопрос">
+                        <p class="text--medium text--bold-medium nomargintop">Оплата</p>
+                        <ol class="list-ol">
+                            <li class="list-ol__item">Вы можете оплатить заказ банковской картой или по&nbsp;счету. Мы работаем только по&nbsp;100%
+                                предоплате.
+                            </li>
+                            <li class="list-ol__item">Доступные способы оплаты заказов:
+                                <br>
+                                <br>
+                                <!--Поместите этот код в тег <head> вашей страницы-->
+                                <script src="https://www.walletone.com/merchant/widget/1.0.2/script.js"></script>
+
+                                <!--Поместите этот код в то место разметки вашей страницы, где должен быть виджет W1-->
+                                <div id="w1widget">
+                                    <div class="w1-widget  __transparent-bg">
+                                        <div class="w1-widget_header">
+                                            <a class="w1-pay-types-link" href="https://www.walletone.com/ru/merchant/payments" target="_blank" title="Payment by Wallet one"></a>
+                                        </div>
+                                        <div class="w1-widget_provider-list">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/CreditCardRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/QiwiWalletRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/WalletOneRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/SberOnlineRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/TinkoffRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/EurosetRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/BankTransferRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/SvyaznoyRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/CashTerminalRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/AlfaclickRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/PsbRetailRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/FakturaruRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/ContactRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/UnistreamRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/RussianPostRUB.png?type=pt&amp;w=70&amp;h=70"> </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    W1.widget({
+                                        "pt": "CreditCardRUB,QiwiWalletRUB,WalletOneRUB,SberOnlineRUB,TinkoffRUB,EurosetRUB,BankTransferRUB,SvyaznoyRUB,CashTerminalRUB,AlfaclickRUB,PsbRetailRUB,FakturaruRUB,ContactRUB,UnistreamRUB,RussianPostRUB",
+                                        "logosSize": "small",
+                                        "grayscale": false,
+                                        "background": "transparent",
+                                        "fixWidth": "",
+                                        "container": "w1widget"
+                                    });
+                                </script>
+                                <br>Для того, чтобы оплатить товар по&nbsp;счету, напишите нам:
+                                <a href="mailto:evotor@lad24.ru" class="link">evotor@lad24.ru</a>. В&nbsp;теме письма укажите «Нужен счет на&nbsp;оплату».
+                            </li>
+                            <li class="list-ol__item">Вы сможете проверить соответствие комплектации заказа и&nbsp;исправность товара в&nbsp;присутствии
+                                курьера.
+                            </li>
+                        </ol>
+                        <b>Договор оферты:</b>
+                        <a href="/storage/app/media/pubofertaevolad.pdf" download="download">Скачать</a>.
+                        <br>
+                        <b>Договор оферты Промсвязьбанка:</b>
+                        <a href="/storage/app/media/pubofertaevoPromsvyazbank.pdf" download="download">Скачать</a>.
+                        <br>
+                        <br>
+                        <br>
+                        <h2 class="text--medium text--bold-medium ">Реквизиты ООО «Эво-Лад»</h2>
+                        <ul class="list">
+
+                            <li class="list__item list__item_no list__item_0">Полное наименование: </li>
+                            <li class="list__item list__item_no list__item_0">Общество с&nbsp;ограниченной ответственностью «Эво-Лад» </li>
+                            <li class="list__item list__item_no list__item_0">Почтовый адрес: 603093, г.&nbsp;Нижний Новгород, а/я&nbsp;82, ГК Лад </li>
+                            <li class="list__item list__item_no list__item_0">ОГРН: 1165275051567 </li>
+                            <li class="list__item list__item_no list__item_0">ИНН: 5260432393 </li>
+                            <li class="list__item list__item_no list__item_0">Контакты: 8 (800)&nbsp;775-85-25</li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="details-block">
+                <input type="radio" name="equipment" id="equipment-3" value="on">
+                <label for="equipment-3">Задать вопрос</label>
+                <div class="details-content">
+                    <div class="details-content-text">
+                        <form method="POST" data-request="form_dynamic::onRequest" class="form form_null" data-request-data="id:21" data-request-update="'form_dynamic::answer':'#answer21'"
+                            data-request-success="form__success(data, $(this))">
+                            <div class="form__wrap">
+
+                                <p class="text3--black text--regular text--medium34 text--medium24-mobile nomargin">Задайте свой вопрос</p>
+                                <div class="hidden-xs">
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-9 vcenter col-xs-24 center-mobile">
+                                        <input type="text" class="form__input form__input_inline-center form__input_inline-center-required" name="name" placeholder="Ваше имя *">
+                                        <input type="text" class="form__input form__input_inline-center" name="email" placeholder="Электронная почта *">
+                                        <input type="text" class="form__input form__input_inline-center" name="phone" placeholder="Телефон ">
+                                    </div>
+                                    <!--
+                                -->
+                                    <div class="col-md-1 hidden-xs vcenter">&nbsp;</div>
+                                    <!--
+                                -->
+                                    <div class="col-md-14 vcenter col-xs-24 ">
+                                        <p class="text--medium text--bold form__text_inline-center form__text_inline-center-hm">Текст сообщения:</p>
+                                        <textarea class="form__textarea form__textarea_inline-center form__textarea_nomax" name="message" placeholder="Задайте свой вопрос в этой форме, ответ мы пришлем на вашу почту"></textarea>
+                                    </div>
+                                </div>
+
+                                <input type="text" class="form__input form__input_hide" name="other" placeholder="Дополнительно">
+                                <input type="hidden" name="comment" value="Задать вопрос из карточка товара">
+                                <input type="hidden" name="target" value="ask_question_product">
+                                <input type="hidden" name="target_category" value="">
+                                <input type="hidden" name="target_action" value="">
+                                <div class="hidden-xs">
+                                    <br>
+                                </div>
+                                <p class="text--center text--gray text--small12">
+                                    <input id="i_agree" class="checkbox checkbox_orange" type="checkbox" value="1">
+                                    <label for="i_agree">
+                                        Я согласен на обработку моих персональных данных.
+                                        <a href="/catalog/politicy" class="link link_border link_border-gray  text--gray">Пользовательское соглашение</a>
+                                    </label>
+                                </p>
+                                <div class="visible-xs">
+                                    <br>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-7 hidden-xs">&nbsp;</div>
+                                    <div class="col-md-10  col-xs-24">
+                                        <input type="submit" class="form__button form__button_inline-center text--bold-medium text--medium center-mobile-block button disabled"
+                                            disabled="disabled" name="send" value="Отправить вопрос">
+                                    </div>
+                                    <div class="col-md-7 hidden-xs">&nbsp;</div>
+                                </div>
+
                             </div>
-                            <div class="col-md-7 hidden-xs">&nbsp;</div>
-                        </div>
+                            <div class="form__success form__success_inline-center text--bold text--medium" id="answer21">
+                                Спасибо, что обратились в&nbsp;нашу компанию.
+                                <br> В&nbsp;ближайшее время мы&nbsp;ответим вам.
+                            </div>
+                        </form>
+
 
                     </div>
-                    <div class="form__success form__success_inline-center text--bold text--medium" id="answer21">
-                        Спасибо, что обратились в&nbsp;нашу компанию.
-                        <br> В&nbsp;ближайшее время мы&nbsp;ответим вам.
-                    </div>
-                </form>
-
-
+                </div>
             </div>
         </div>
+
     </div>
-    </div>
-    </div>
+
+
 
 
 
@@ -828,101 +842,14 @@
 
 
     <!-- {#Комментарии - Табы END #} {#Комментарии - С этим товаром покупают #} -->
-    <div class="catalog__wpb">
-        <div class="container  items-container">
-            <br>
-            <br>
-            <div class="hidden-xs">
-                <br>
-            </div>
-            <p class="text--medium20 text--bold text--black2 nomargin">С&nbsp;этим товаром покупают</p>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="col-md-9 col-xs-7">
-                            <img src="https://kkt365.ru/storage/temp/public/c52/855/a9f/thumb_c52855a9f159fd718aecccfbb6644dfd1494854825_300x255_auto.png"
-                                alt="Договор на передачу фискальных данных в ФНС через ОФД" class="img_max-w170 img_full-w">
-                        </div>
-                        <div class="col-md-1 col-xs-1">&nbsp;</div>
-                        <div class="col-md-14 col-xs-16">
-                            <a href="#" class="popup__link-form text--black3 link link_border text--small14 link_border-gray2" data-id="14" data-product-cost="3000"
-                                data-product-type="Service2" data-product-name="Договор на передачу фискальных данных в ФНС через ОФД"
-                                data-target_category="ЗаказатьДоговорУслугаКаталог" data-target_action="Заказать" data-target="fns">Договор на передачу фискальных данных в ФНС через ОФД</a>
-                            <br>
-                            <br>
-                            <p class="nomargin text--black3 text--bold">
-                                <span class="cartGetCost cart__replaerCostCity" data-product-type="Service2" data-product-id="2">3000</span>
-                                <span class="text--rouble2" itemprop="priceCurrency" content="RUB">Р</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-1">&nbsp;</div>
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="col-md-9 col-xs-7">
-                            <img src="https://kkt365.ru/storage/temp/public/b66/5fe/a0b/thumb_b665fea0bafc9813b8838a5d640bdbf31494854825_300x255_auto.png"
-                                alt="Регистрация ККТ на сайте ФНС и ОФД" class="img_max-w170 img_full-w">
-                        </div>
-                        <div class="col-md-1 col-xs-1">&nbsp;</div>
-                        <div class="col-md-14 col-xs-16">
-                            <a href="#" class="popup__link-form text--black3 link link_border text--small14 link_border-gray2" data-id="14" data-product-cost="1500"
-                                data-product-type="Service2" data-product-name="Регистрация ККТ на сайте ФНС и ОФД" data-target_category="ЗаказатьРегУслугаКаталог"
-                                data-target_action="Заказать" data-target="ofd">Регистрация ККТ на сайте ФНС и ОФД</a>
-                            <br>
-                            <br>
-                            <p class="nomargin text--black3 text--bold">
-                                <span class="cartGetCost cart__replaerCostCity" data-product-type="Service2" data-product-id="5">1500</span>
-                                <span class="text--rouble2" itemprop="priceCurrency" content="RUB">Р</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-1">&nbsp;</div>
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="col-md-9 col-xs-7">
-                            <img src="https://kkt365.ru/storage/temp/public/7fe/af1/847/thumb_7feaf184717616907802594cc79d6a731522071555_300x255_auto.png"
-                                alt="Фискальный накопитель на 13 месяцев с договором ОФД на 1 год" class="img_max-w170 img_full-w">
-                        </div>
-                        <div class="col-md-1 col-xs-1">&nbsp;</div>
-                        <div class="col-md-14 col-xs-16">
-                            <a href="#" class="popup__link-form text--black3 link link_border text--small14 link_border-gray2" data-id="14" data-product-cost="9000"
-                                data-product-type="Service2" data-product-name="Фискальный накопитель на 13 месяцев с договором ОФД на 1 год"
-                                data-target_category="" data-target_action="" data-target="">Фискальный накопитель на 13 месяцев с договором ОФД на 1 год</a>
-                            <br>
-                            <br>
-                            <p class="nomargin text--black3 text--bold">
-                                <span class="cartGetCost cart__replaerCostCity" data-product-type="Service2" data-product-id="13">9000</span>
-                                <span class="text--rouble2" itemprop="priceCurrency" content="RUB">Р</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-1">&nbsp;</div>
-            </div>
-            <br>
-            <br>
-            <div class="hidden-xs">
-                <br>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- {#Комментарии - С этим товаром приобретают END #} -->
 
 
 
 
 
-    <!-- С этим товаром покупают - мобильная версия -->
+
+
+    <!-- С этим товаром покупают  -->
     <div class="block-with-product-container">
         <div class="container-with-products-title text--bold text--medium24 text--medium24-mobile ">С этим товаром покупают</div>
 
@@ -933,19 +860,34 @@
 
 
             <div class="items-with-goods">
+                <div class="item-additional-information">
 
+                    <div class="item-additional-information-content">
+                        <button class="button-information"></button>
+                        <div class="js-container hidden" style="display: block;">
+
+                        </div>
+
+                        <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
+                    </div>
+                </div>
                 <div class="item-for-buy">
+
+
+
                     <img class="item-for-buy-img" alt="" src="https://kkt365.ru/storage/temp/public/c52/855/a9f/thumb_c52855a9f159fd718aecccfbb6644dfd1494854825_300x255_auto.png"
                     />
-                    <p class="items-with-goods-p text--bold text--medium text--medium-mobile">Договор на передачу фискальных данных в ФНС через ОФД</p>
 
-                    <div class="price-with-button">
+                    <div class="description-item">
+                        <p class="items-with-goods-p">Договор на передачу фискальных данных в ФНС через ОФД</p>
 
-                        <div class="items-with-goods-price text--bold text--medium28">3000</div>
+                        <div class="price-with-button">
 
+                            <div class="items-with-goods-price">3000</div>
 
+                            <button class="button-basket" onclick="this.classList.toggle('active')"></button>
+                        </div>
 
-                        <button class="buton-basket"></button>
                     </div>
 
 
@@ -962,21 +904,30 @@
 
 
             <div class="items-with-goods">
+                <div class="item-additional-information">
 
+                    <div class="item-additional-information-content">
+                        <button class="button-information"></button>
+                        <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
+                        <div class="js-container hidden" style="display: block;">
+
+                        </div>
+                    </div>
+                </div>
                 <div class="item-for-buy">
 
                     <img class="item-for-buy-img" alt="" src="https://kkt365.ru/storage/temp/public/b66/5fe/a0b/thumb_b665fea0bafc9813b8838a5d640bdbf31494854825_300x255_auto.png"
                     />
+                    <div class="description-item">
+                        <p class="items-with-goods-p ">Регистрация ККТ на сайте ФНС и ОФД</p>
 
-                    <p class="items-with-goods-p text--bold text--medium text--medium-mobile">Регистрация ККТ на сайте ФНС и ОФД</p>
+                        <div class="price-with-button">
 
-                    <div class="price-with-button">
+                            <div class="items-with-goods-price ">1500</div>
 
-                        <div class="items-with-goods-price text--bold text--medium28">1500</div>
+                            <button class="button-basket" onclick="this.classList.toggle('active')"></button>
+                        </div>
 
-
-
-                        <button class="buton-basket"></button>
                     </div>
 
 
@@ -993,21 +944,30 @@
 
 
             <div class="items-with-goods">
+                <div class="item-additional-information">
 
+                    <div class="item-additional-information-content">
+                        <button class="button-information"></button>
+                        <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
+                        <div class="js-container hidden" style="display: block;">
+
+                        </div>
+                    </div>
+                </div>
                 <div class="item-for-buy">
 
                     <img class="item-for-buy-img" alt="" src="https://kkt365.ru/storage/temp/public/7fe/af1/847/thumb_7feaf184717616907802594cc79d6a731522071555_300x255_auto.png"
                     />
+                    <div class="description-item">
+                        <p class="items-with-goods-p">Фискальный накопитель на 13 мес. с договором ОФД на 1 год</p>
 
-                    <p class="items-with-goods-p text--bold text--medium text--medium-mobile">Фискальный накопитель на 13 мес. с договором ОФД на 1 год</p>
+                        <div class="price-with-button">
 
-                    <div class="price-with-button">
+                            <div class="items-with-goods-price">9000</div>
+                            <button class="button-basket" onclick="this.classList.toggle('active')"></button>
+                        </div>
 
-                        <div class="items-with-goods-price text--bold text--medium28">9000</div>
 
-
-
-                        <button class="buton-basket"></button>
                     </div>
 
 
@@ -1023,5 +983,47 @@
         </section>
     </div>
 
+
+
+    <!-- <button class="rev button-basket-popup">
+        <span class="open ">В корзину</span>
+        <div class="hidd"></div>
+    </button> -->
+
+
+    <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
+
+    <div class="js-container hidden" style="display: block;">
+
+    </div>
+
+
+
+
+
+    <script>
+        ; (function ($D) {
+            var $button = $D.querySelector('.js-button'),
+                $container = $D.querySelector('.js-container');
+
+            $button.addEventListener('click', function (e) {
+                var data = e.target.dataset,
+                    toggleText = $button.innerHTML,
+                    isVisible = $container.style.display == 'block';
+
+                $button.innerHTML = data.toggleText;
+                data.toggleText = toggleText;
+
+                $container.style.display = isVisible ? 'none' : 'block';
+            });
+        })(document);
+    </script>
+
+
+    <!-- <script>$('.rev').on('click', '.open', function () {
+            var hBlock = $(this).siblings('.hidd');
+            $(this).text(hBlock.is(':visible') ? 'В корзину' : 'Добавлено');
+            hBlock.toggle('slow');
+        });</script> -->
 
 </body>
