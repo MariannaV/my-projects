@@ -733,3 +733,13 @@
     border-radius: 50%;
     background-color: initial;
 }
+
+.block-with-video {
+    width: 100%;
+    height: 56vw;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-height: 450px;
+    max-width: 764px;
+}
