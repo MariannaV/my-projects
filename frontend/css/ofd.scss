@@ -66,6 +66,11 @@ body {
         font-weight: 100;
         width: 470px;
         margin: 0;
+        @media(min-width: 768px) and (max-width: 1023px) {
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 100%;
+        }
     }
     h1+p {
         margin-top: 50px;
@@ -94,12 +99,16 @@ body {
     }
     @media (min-width: 768px) and (max-width: 1599px) {
         width: 645px;
+        margin: 0 auto;
         margin-top: 35px;
     }
     @media (min-width: 1600px) {}
     margin-top: 0; // margin-left: 50px;
 }
 
+// @media(min-width:990px) and (max-width: 1023px) {
+//     margin: 0 auto;
+// }
 .form-for-connection-tarrifs {
     margin-left: auto;
     border-radius: 4px;

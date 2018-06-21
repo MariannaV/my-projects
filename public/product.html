@@ -36,7 +36,7 @@
 
 
     <div class="bg--white">
-        <div class="container">
+        <div class="container container-with-all-infotmation">
             <button class="button-basket-outside">
 
 
@@ -139,7 +139,7 @@
                                 <!--Счет на оплату-->
 
 
-                                <a class="button button_gray button_h60 button_gray-br button_1-br" href="#">Получить счет на оплату</a>
+                                <a class="get-invoice" href="#">Получить счет на оплату</a>
                             </div>
                         </div>
 
@@ -177,7 +177,7 @@
                 <label for="equipment-1">Характеристики</label>
             </div>
             <div class="nav-block">
-                <input type="radio" name="equipment" id="equipment-2" value="on">
+
                 <label for="equipment-2">Условия оплаты и доставки</label>
             </div>
             <div class="nav-block">
@@ -698,7 +698,7 @@
                                             <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/QiwiWalletRUB.png?type=pt&amp;w=70&amp;h=70">
                                             <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/WalletOneRUB.png?type=pt&amp;w=70&amp;h=70">
                                             <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/SberOnlineRUB.png?type=pt&amp;w=70&amp;h=70">
-                                            <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/TinkoffRUB.png?type=pt&amp;w=70&amp;h=70">
+                                            <img class="w1-wimydget_provider-item" src="https://www.walletone.com/logo/provider/TinkoffRUB.png?type=pt&amp;w=70&amp;h=70">
                                             <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/EurosetRUB.png?type=pt&amp;w=70&amp;h=70">
                                             <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/BankTransferRUB.png?type=pt&amp;w=70&amp;h=70">
                                             <img class="w1-widget_provider-item" src="https://www.walletone.com/logo/provider/SvyaznoyRUB.png?type=pt&amp;w=70&amp;h=70">
@@ -864,11 +864,9 @@
 
                     <div class="item-additional-information-content">
                         <button class="button-information"></button>
-                        <div class="js-container hidden" style="display: block;">
 
-                        </div>
 
-                        <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
+                        <button class="button-basket-popup" onclick="this.classList.toggle('active')"></button>
                     </div>
                 </div>
                 <div class="item-for-buy">
@@ -908,10 +906,8 @@
 
                     <div class="item-additional-information-content">
                         <button class="button-information"></button>
-                        <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
-                        <div class="js-container hidden" style="display: block;">
+                        <button class="button-basket-popup" onclick="this.classList.toggle('active')"></button>
 
-                        </div>
                     </div>
                 </div>
                 <div class="item-for-buy">
@@ -948,30 +944,28 @@
 
                     <div class="item-additional-information-content">
                         <button class="button-information"></button>
-                        <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
-                        <div class="js-container hidden" style="display: block;">
+                        <button class="button-basket-popup" onclick="this.classList.toggle('active')"></button>
 
-                        </div>
                     </div>
-                    <div class="item-for-buy">
+                </div>
+                <div class="item-for-buy">
 
-                        <img class="item-for-buy-img" alt="" src="https://kkt365.ru/storage/temp/public/7fe/af1/847/thumb_7feaf184717616907802594cc79d6a731522071555_300x255_auto.png"
-                        />
-                        <div class="description-item">
-                            <p class="items-with-goods-p">Фискальный накопитель на 13 мес. с договором ОФД на 1 год</p>
+                    <img class="item-for-buy-img" alt="" src="https://kkt365.ru/storage/temp/public/7fe/af1/847/thumb_7feaf184717616907802594cc79d6a731522071555_300x255_auto.png"
+                    />
+                    <div class="description-item">
+                        <p class="items-with-goods-p">Фискальный накопитель на 13 мес. с договором ОФД на 1 год</p>
 
-                            <div class="price-with-button">
+                        <div class="price-with-button">
 
-                                <div class="items-with-goods-price">9000</div>
-                                <button class="button-basket" onclick="this.classList.toggle('active')"></button>
-                            </div>
-
-
+                            <div class="items-with-goods-price">9000</div>
+                            <button class="button-basket" onclick="this.classList.toggle('active')"></button>
                         </div>
 
 
-
                     </div>
+
+
+
 
 
 
@@ -982,47 +976,31 @@
         </section>
         </div>
 
+        <div class="container-with-total-cost">
+
+            <input type="checkbox" name="equipment" id="equipment-5" value="on">
+            <label for="equipment-5" class="total-cost-label">
+                <div class="total-cost-content-part">
+                    <p>Итого:
+                        <span>23 490</span>
+                    </p>
+                    <div class="button-basket-end"></div>
+                </div>
+            </label>
 
 
-        <!-- <button class="rev button-basket-popup">
-        <span class="open ">В корзину</span>
-        <div class="hidd"></div>
-    </button> -->
-
-
-        <button class="js-button button-basket-popup" onclick="this.classList.toggle('active')" data-toggle-text="Добавлено">В корзину</button>
-
-        <div class="js-container hidden" style="display: block;">
-
+            <div class="total-cost-content">
+                <p>Итого:
+                    <span>23 490</span>
+                </p>
+                <a href="#" data-product-id="1" data-product-type="Product" data-product-cost="11990" data-product-name="Эвотор 7.2 смарт-терминал без ФН"
+                    class="button button_h60 button_nobord  text--medium text--bold ">Добавить в корзину</a>
+                <a class="get-invoice" href="#">Получить счет на оплату</a>
+                <a href="#" class="to-get-consultation end"> Получить консультацию</a>
+                <label for="equipment-5"></label>
+            </div>
         </div>
 
 
-
-
-
-        <script>
-            ; (function ($D) {
-                var $button = $D.querySelector('.js-button'),
-                    $container = $D.querySelector('.js-container');
-
-                $button.addEventListener('click', function (e) {
-                    var data = e.target.dataset,
-                        toggleText = $button.innerHTML,
-                        isVisible = $container.style.display == 'block';
-
-                    $button.innerHTML = data.toggleText;
-                    data.toggleText = toggleText;
-
-                    $container.style.display = isVisible ? 'none' : 'block';
-                });
-            })(document);
-        </script>
-
-
-        <!-- <script>$('.rev').on('click', '.open', function () {
-            var hBlock = $(this).siblings('.hidd');
-            $(this).text(hBlock.is(':visible') ? 'В корзину' : 'Добавлено');
-            hBlock.toggle('slow');
-        });</script> -->
 
 </body>
