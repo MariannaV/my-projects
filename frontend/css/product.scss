@@ -4,6 +4,23 @@
     position: relative;
 }
 
+.block-with-buttons {
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 765px) {
+        flex-direction: row;
+    }
+}
+
+.button-basket-popup+.get-invoice {
+    @media(max-width: 764px) {
+        margin-top: 20px;
+    }
+    @media(min-width: 765px) {
+        margin-left: 20px;
+    }
+}
+
 .button-basket-outside {
     cursor: pointer;
     position: fixed;
@@ -57,9 +74,12 @@
 }
 
 .get-invoice {
+    min-width: 250px;
+    height: 60px;
+    display: block;
     background-color: #FFFFFF;
     border: 1px solid #D8DCE6;
-    padding: 16px;
+    padding: 15px 5px 18px 16px;
     border-radius: 50px;
     color: #333333;
     cursor: pointer;
@@ -68,6 +88,7 @@
         border-color: #FF7800;
         text-decoration: none;
         color: #333333;
+        color: #FF7800;
     }
 }
 
@@ -95,9 +116,7 @@
     @media (min-width: 768px) {
         display: block;
     }
-}
-
-// .container {
+} // .container {
 //     @media (max-width: 767px) {
 //         display: none;
 //     }
@@ -106,7 +125,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: center;
+    @media (max-width: 765px) {
+        width: 100%
+    }
 }
 
 .value-of-product {
@@ -197,8 +218,13 @@
     background-repeat: no-repeat;
     margin-left: 21px;
     padding-left: 27px;
-    @media(max-width: 767px) {
+    @media(max-width: 765px) {
+        align-items: center;
         order: 1;
+        margin-top: 3vw;
+    }
+    @media(min-width: 992px) and (max-width:1599px) {
+        margin-bottom: 20px;
     }
     &.end {
         background-image: url("https://kkt365.ru/themes/evotor/assets/i/consultation-white.svg");
@@ -206,6 +232,10 @@
         text-decoration: underline;
         text-decoration-color: rgba(255, 255, 255, 0.3);
     }
+}
+
+.to-get-consultation+.block-with-buttons {
+    margin-top: 1vw;
 }
 
 .container-with-products-title {
@@ -248,14 +278,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .block-with-description {
     padding-right: 300px;
     padding-top: 40px;
-}
-
-// .block-with-product-container {
+} // .block-with-product-container {
 //     // @media(min-width: 768px) {
 //     //     display: none;
 //     // }
@@ -414,9 +444,7 @@
 
 .details-block>input:checked~.details-content:first-of-type {
     max-height: 9999px;
-}
-
-// .details-block>input:not(:checked)~.details-content {
+} // .details-block>input:not(:checked)~.details-content {
 //     display: none;
 // }
 .details-block>input:not(:checked)~.details-content {
@@ -525,10 +553,10 @@
 
 .button-basket-popup {
     background-image: url(https://kkt365.ru/themes/evotor/assets/i/basket-card.svg);
-    width: 20px;
-    height: 20px;
+    width: 100%;
+    min-width: 230px;
+    height: 60px;
     color: #FFFFFF;
-    min-width: 200px;
     min-height: 60px;
     padding-left: 40px;
     padding-right: 40px;
@@ -555,6 +583,24 @@
             content: "Добавлено";
         }
     }
+    &.start-button {
+        padding-left: 0;
+        padding-right: 0;
+        background-image: none;
+        &::after {
+            content: "Добавить в корзину";
+        }
+        &:hover {
+            background-color: #FF9142;
+            border: 1px solid #FF9142;
+        }
+        &.active {
+            border-color: #FF7800;
+            &:hover {
+                background-color: #FFFFFF;
+            }
+        }
+    }
 }
 
 .items-with-goods:hover>.item-additional-information {
@@ -564,6 +610,9 @@
 }
 
 .container-with-total-cost {
+    @media(max-width: 1599px) {
+        display: none;
+    }
     input {
         display: none;
     }
