@@ -396,3 +396,7 @@ body {
         padding-right: 13.8vw;
     }
 }
+
+.form-for-connection-tarrifs>input:checked~label {
+    color: red;
+}

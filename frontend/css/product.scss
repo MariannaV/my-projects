@@ -24,7 +24,7 @@
 .button-basket-outside {
     cursor: pointer;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     background-image: url(https://kkt365.ru/themes/evotor/assets/i/basket-card.svg); // width: 24px; // height: 24px;
     color: #FFFFFF;
     min-width: 44px;
@@ -726,12 +726,16 @@
     }
 }
 
-.nav-owls {
-    border: 1px solid red;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: initial;
+.product-slider-nav-buttons {
+    display: flex;
+    justify-content: center;
+    &>button {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #d8dce6;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
 }
 
 .block-with-video {
@@ -742,4 +746,71 @@
     display: block;
     max-height: 450px;
     max-width: 764px;
+}
+
+.product-slider-nav-arrows {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center; // right: 0;
+    // bottom: 0;
+    // transform: translateY(50%);
+    &-up,
+    &-down {
+        width: 10px;
+        height: 10px;
+        background-color: initial;
+        border: initial;
+        background-repeat: no-repeat;
+        background-size: 9px 11px;
+        background-position-y: 4px;
+        background-position-x: 6px;
+        margin: 0 auto;
+        z-index: 2;
+    }
+    &-up {
+        background-image: url("https://kkt365.ru/themes/evotor/assets/i/arrow-up.svg");
+        width: 20px;
+        height: 20px;
+    }
+    &-down {
+        background-image: url("https://kkt365.ru/themes/evotor/assets/i/arrow-down.svg");
+        width: 20px;
+        height: 20px;
+    }
+    &-up+&-down {
+        margin-left: 1px;
+    }
+}
+
+.banner-block-product>img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.product-slider {
+    width: 31%;
+}
+
+.product-slider-nav-arrows {
+    display: none;
+    @media (min-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        .product-slider-nav-img {
+            max-height: 343px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            img {
+                background-color: #FFFFFF;
+                border: 1px solid #D8DCE6;
+                padding: 3px;
+                z-index: 2;
+            }
+            img+img {
+                margin-top: 18px;
+            }
+        }
+    }
 }
