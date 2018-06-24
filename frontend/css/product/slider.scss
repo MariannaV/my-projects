@@ -1,0 +1,90 @@
+.product-slider {
+  position: relative;
+
+  & > .glide__track {
+  }
+
+  .glide__slide {
+    padding-left: 93px;
+  }
+}
+
+.product-slider-nav-images {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: grid;
+    width: 93px;
+    max-height: 343px;
+    overflow: hidden;
+    grid-gap: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+
+.product-slider-nav-img-button {
+  border: 1px solid #d8dce6;
+  background-color: white;
+  padding: 3px;
+
+  & > img {
+  }
+
+  &.glide__bullet--active {
+    border-color: black;
+  }
+}
+
+.product-slider-nav-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, max-content));
+  justify-content: center;
+  grid-gap: 5px;
+
+  & > button {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #d8dce6;
+    border-radius: 50%;
+    padding: 0;
+  }
+}
+
+.product-slider-nav-arrows {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center; // right: 0;
+  // bottom: 0;
+  // transform: translateY(50%);
+  &-up,
+  &-down {
+    width: 10px;
+    height: 10px;
+    background-color: initial;
+    border: initial;
+    background-repeat: no-repeat;
+    background-size: 9px 11px;
+    background-position-y: 4px;
+    background-position-x: 6px;
+    margin: 0 auto;
+    z-index: 2;
+  }
+  &-up {
+    background-image: url("https://kkt365.ru/themes/evotor/assets/i/arrow-up.svg");
+    width: 20px;
+    height: 20px;
+  }
+  &-down {
+    background-image: url("https://kkt365.ru/themes/evotor/assets/i/arrow-down.svg");
+    width: 20px;
+    height: 20px;
+  }
+  &-up + &-down {
+    margin-left: 1px;
+  }
+}
