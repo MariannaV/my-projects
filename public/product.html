@@ -20,13 +20,42 @@
 </head>
 
 
+
+
+<div class="form-consultation">
+  <h3>Завявка на консультацию</h3>
+  <form method="POST" data-request="{{self}}::onRequest" data-request-data="id:{{id_form}}" data-request-update="'{{self}}::answer':'#answer{{id_form}}'"
+    data-request-success="form__success(data, $(this))">
+    <div class="form__wrap">
+
+      <div class="div-up-ofd">
+        <input type="text" class="div-up__text ofd_input ofd-placeholder" name="name">
+        <label>Имя </label>
+      </div>
+      <div class="div-up-ofd">
+        <input type="text" class="div-up__text ofd_input ofd-placeholder" name="phone">
+        <label>Телефон</label>
+      </div>
+      <input id="i_agree-02" class="checkbox checkbox_orange user-agreement-checkbox" type="checkbox" value="1">
+      <input type="submit" class="button text--medium text--bold-medium popup__link-form ofd_buttom_form user-agreement-submit"
+        value="Отправить">
+      <label for="i_agree-02" class="user-agreement">
+        <p class="user-agreement-text">Я согласен на обработку моих персональных данных.
+          <a href="/catalog/politicy" class="link link_border link_border-gray  text--gray">Пользовательское соглашение</a>
+        </p>
+      </label>
+  </form>
+
+  </div>
+</div>
+
 <body>
   <!-- #Комментарии - Краткая инфа товара# -->
   <header style="height: 100px; background-color: thistle;">
     чтобы лучше было видно
   </header>
   <div class="bg--white">
-    <div class="container container-with-all-infotmation">
+    <div class="container container-with-all-information">
       <button class="button-basket-outside">
         <div class="counter-value">1
           <span class="counter-item">товар</span>
@@ -125,7 +154,8 @@
             <!--описание-->
 
             <p class="catalog__description text--small14 nomargin" itemprop="description">Работает без подзарядки до 14 часов. Подойдет курьерам, экспедиторам и выездной торговле. Полноценная касса под
-              54-ФЗ в компактном корпусе. В комплект поставки входят: смарт-терминал 7.3 с предустановленным ПО Evotor POS.</p>
+              54-ФЗ в компактном корпусе. В комплект поставки входят: смарт-терминал 7.3 с предустановленным ПО Evotor POS.
+            </p>
 
 
 
@@ -215,19 +245,19 @@
 
       <div class="nav-block">
 
-        <label for="equipment-0">Описание</label>
+        <label onclick="this.classList.toggle('active-label')" for="equipment-0">Описание</label>
       </div>
       <div class="nav-block">
 
-        <label for="equipment-1">Характеристики</label>
+        <label onclick="this.classList.toggle('active-label')" for="equipment-1">Характеристики</label>
       </div>
       <div class="nav-block">
 
-        <label for="equipment-2">Условия оплаты и доставки</label>
+        <label onclick="this.classList.toggle('active-label')" for="equipment-2">Условия оплаты и доставки</label>
       </div>
       <div class="nav-block">
 
-        <label for="equipment-3">Задать вопрос</label>
+        <label onclick="this.classList.toggle('active-label')" for="equipment-3">Задать вопрос</label>
       </div>
 
     </div>
@@ -848,7 +878,7 @@
                 <div class="hidden-xs">
                   <br>
                 </div>
-                <p class="text--center text--gray text--small12">
+                <p class="text--center text--gray text--small12   label-form-agree">
                   <input id="i_agree" class="checkbox checkbox_orange" type="checkbox" value="1">
                   <label for="i_agree">
                     Я согласен на обработку моих персональных данных.
@@ -920,7 +950,7 @@
         <div class="item-additional-information">
 
           <div class="item-additional-information-content">
-            <button class="button-information"></button>
+            <a href="https://kkt365.ru/catalog/services" class="button-information"></a>
 
 
             <button class="button-basket-popup" onclick="this.classList.toggle('active')"></button>
@@ -962,7 +992,7 @@
         <div class="item-additional-information">
 
           <div class="item-additional-information-content">
-            <button class="button-information"></button>
+            <a href="https://kkt365.ru/catalog/services" class="button-information"></a>
             <button class="button-basket-popup" onclick="this.classList.toggle('active')"></button>
 
           </div>
@@ -1000,7 +1030,7 @@
         <div class="item-additional-information">
 
           <div class="item-additional-information-content">
-            <button class="button-information"></button>
+            <a href="https://kkt365.ru/catalog/services" class="button-information"></a>
             <button class="button-basket-popup" onclick="this.classList.toggle('active')"></button>
 
           </div>
