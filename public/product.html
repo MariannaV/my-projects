@@ -240,27 +240,20 @@
 
   <div class="container-with-details">
     <div class="details-navigation">
-
-
-
       <div class="nav-block">
-
-        <label onclick="this.classList.toggle('active-label')" for="equipment-0">Описание</label>
+        <label class="active-label" onclick="accordionNavigation(event)" for="equipment-0">Описание</label>
       </div>
       <div class="nav-block">
-
-        <label onclick="this.classList.toggle('active-label')" for="equipment-1">Характеристики</label>
+        <label onclick="accordionNavigation(event)" for="equipment-1">Характеристики</label>
       </div>
       <div class="nav-block">
-
-        <label onclick="this.classList.toggle('active-label')" for="equipment-2">Условия оплаты и доставки</label>
+        <label onclick="accordionNavigation(event)" for="equipment-2">Условия оплаты и доставки</label>
       </div>
       <div class="nav-block">
-
-        <label onclick="this.classList.toggle('active-label')" for="equipment-3">Задать вопрос</label>
+        <label onclick="accordionNavigation(event)" for="equipment-3">Задать вопрос</label>
       </div>
-
     </div>
+
     <div class="details-blocks">
       <div class="details-block">
         <input type="radio" name="equipment" id="equipment-0" value="on" checked="">

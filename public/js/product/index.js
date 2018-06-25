@@ -36,3 +36,18 @@
   //   animationTimingFunc: "cubic-bezier(0.165, 0.840, 0.440, 1.000)"
   // }).mount();
 })();
+
+function accordionNavigation(event) {
+  const labels = document.querySelectorAll(
+    ".container-with-details > .details-navigation label"
+  );
+  const newLabelId = event.target.getAttribute("for");
+
+  [...labels].forEach((el, index) => {
+    if (el.getAttribute("for") === newLabelId) {
+      el.classList.add("active-label");
+    } else if (el.classList.contains("active-label")) {
+      el.classList.remove("active-label");
+    }
+  });
+}
