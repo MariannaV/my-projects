@@ -1,4 +1,4 @@
-(function() {
+(function () {
   window.matchMedia("(min-width: 768px)").matches &&
     new Glide(".ofd-slider", {
       type: "carousel", //после последнего слайда показывать первый, из-за этого появляются блоки с slide-clone
