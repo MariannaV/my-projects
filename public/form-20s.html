@@ -71,71 +71,71 @@
                             <input type="checkbox" id="application-01" class="button-for-application"></input>
                             <label for="application-01" class=" form-application-label">Оставить заявку
                             </label>
-                            <label for="not-interesting-close" class="form-application-not-interesting">Не интересно</div>
+                            <!-- <label for="not-interesting-close" class="form-application-not-interesting">Не интересно</div> -->
 
 
 
-                        <!-- <button class="mfp-close">Не интересно</button> -->
-                        <div class="block-with-form">
+                            <!-- <button class="mfp-close">Не интересно</button> -->
+                            <div class="block-with-form">
 
-                            <div class="row slide mt10on472">
-                                <div class="grid_1x2 slide slide__body">
-                                    <div class="div-up-ofd col-sm-9">
-                                        <input type="text" class="div-up__text ofd_input text--gray5 phone_mask" name="phone">
+                                <div class="row slide mt10on472">
+                                    <div class="grid_1x2 slide slide__body">
+                                        <div class="div-up-ofd col-sm-9">
+                                            <input type="text" class="div-up__text ofd_input text--gray5 phone_mask" name="phone">
 
-                                        <input type="hidden" name="comment">
-                                        <input type="hidden" name="target" value="{{target}}" />
-                                        <input type="hidden" name="target_category" value="{{target_category}}" />
-                                        <input type="hidden" name="target_action" value="{{target_action}}" />
-                                        <label class="text--gray5">Телефон</label>
-                                    </div>
-                                    <div class="col-sm-8 col-sm-offset-1">
-                                        <br>
-                                        <input type="submit" class="button form__button text--mid14 disabled nomargintop" disabled="disabled" name="send" value="{{ text_button }}">
+                                            <input type="hidden" name="comment">
+                                            <input type="hidden" name="target" value="{{target}}" />
+                                            <input type="hidden" name="target_category" value="{{target_category}}" />
+                                            <input type="hidden" name="target_action" value="{{target_action}}" />
+                                            <label class="text--gray5">Телефон</label>
+                                        </div>
+                                        <div class="col-sm-8 col-sm-offset-1">
+                                            <br>
+                                            <input type="submit" class="button form__button text--mid14 disabled nomargintop" disabled="disabled" name="send" value="{{ text_button }}">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <br>
-                            <div class="visible-xs">
                                 <br>
+                                <div class="visible-xs">
+                                    <br>
+                                </div>
+                                <p class="margin_left20 text--gray text--small12">
+                                    <input id="i_agree" class="checkbox checkbox_orange" type="checkbox" value="1">
+                                    <label for="i_agree">
+                                        Я согласен на обработку моих персональных данных.
+                                        <a href="/catalog/politicy" class="link link_border link_border-gray  text--gray">Пользовательское соглашение</a>
+                                    </label>
+                                </p>
                             </div>
-                            <p class="margin_left20 text--gray text--small12">
-                                <input id="i_agree" class="checkbox checkbox_orange" type="checkbox" value="1">
-                                <label for="i_agree">
-                                    Я согласен на обработку моих персональных данных.
-                                    <a href="/catalog/politicy" class="link link_border link_border-gray  text--gray">Пользовательское соглашение</a>
-                                </label>
-                            </p>
                         </div>
-                    </div>
-                    <div class="grid grid_1x3 w90per hidden-xxs">
-                        <div class="text--center pt10">
-                            <img src="https://kkt365.ru/themes/evotor/assets/css2/blocks/form/i/aircraft-min.png" alt="" class="pb15">
-                            <br>
-                            <span>Доставляем
-                                <br> по России</span>
+                        <div class="grid grid_1x3 w90per hidden-xxs">
+                            <div class="text--center pt10">
+                                <img src="https://kkt365.ru/themes/evotor/assets/css2/blocks/form/i/aircraft-min.png" alt="" class="pb15">
+                                <br>
+                                <span>Доставляем
+                                    <br> по России</span>
+                            </div>
+                            <div class="text--center pt10">
+                                <img src="https://kkt365.ru/themes/evotor/assets/css2/blocks/form/i/gift-min.png" alt="" class="pb15">
+                                <br>
+                                <span>Подарим
+                                    <br> защитное стекло</span>
+                            </div>
+                            <div class="text--center">
+                                <img src="https://kkt365.ru/themes/evotor/assets/css2/blocks/form/i/motivation-min.png" alt="" class="pb15">
+                                <br>
+                                <span>Бесплатно оформим документы для вычета</span>
+                            </div>
                         </div>
-                        <div class="text--center pt10">
-                            <img src="https://kkt365.ru/themes/evotor/assets/css2/blocks/form/i/gift-min.png" alt="" class="pb15">
-                            <br>
-                            <span>Подарим
-                                <br> защитное стекло</span>
-                        </div>
-                        <div class="text--center">
-                            <img src="https://kkt365.ru/themes/evotor/assets/css2/blocks/form/i/motivation-min.png" alt="" class="pb15">
-                            <br>
-                            <span>Бесплатно оформим документы для вычета</span>
-                        </div>
+
                     </div>
 
                 </div>
 
-        </div>
-
-        <div class="form__success bg--white" style="padding:30px;" id="answer{{id_form}}">
-            {% partial '@answer' %}
-        </div>
-        </form>
-        <div>
-        </div>
+                <div class="form__success bg--white" style="padding:30px;" id="answer{{id_form}}">
+                    {% partial '@answer' %}
+                </div>
+            </form>
+            <div>
+            </div>
 </body>
