@@ -1,0 +1,43 @@
+.popup-form-container {
+    &>input {
+        display: none;
+    }
+}
+
+.container-with-form {
+    margin: 40px 0px;
+    &>.button-for-application {
+        display: none;
+    }
+    &>label.form-application-label {
+        color: #FFFFFF;
+        background-color: #FF7800;
+        padding: 20px 40px;
+        margin-top: 30px;
+        border: 1px solid #FF7800;
+        border-radius: 30px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+.form-application-not-interesting {
+    color: #2A2B37;
+    border-bottom-color: #D8DCE6;
+}
+
+.form-application-label+.form-application-not-interesting {
+    margin-left: 45px;
+}
+
+.block-with-form {
+    margin-top: 20px;
+}
+
+.container-with-form>input:not(:checked)~.block-with-form {
+    display: none;
+}
+
+.popup-form-container>input:checked~.popup-form-20s {
+    display: none;
+}
