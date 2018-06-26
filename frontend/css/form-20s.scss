@@ -41,3 +41,7 @@
 .popup-form-container>input:checked~.popup-form-20s {
     display: none;
 }
+
+.container-with-form>input:checked~.form-application-label {
+    display: none;
+}
