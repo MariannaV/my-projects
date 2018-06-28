@@ -42,6 +42,11 @@
     display: none;
 }
 
-.container-with-form>input:checked~.form-application-label {
+.container-with-form>input:checked~.form-application-label,
+.form-application-not-interesting {
+    display: none;
+}
+
+.container-with-form>input:checked~.form-application-not-interesting {
     display: none;
 }

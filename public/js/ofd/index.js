@@ -7,7 +7,7 @@
       // focusAt: 'center'
       gap: 0, //отступ между слайдами
       // peek:  { before: 100, after: 50 }, //позволяет показать часть предыдущего/следущего слайдов
-      // autoplay: 3700, //интервал между перемоткой
+      autoplay: 3700, //интервал между перемоткой
       hoverpause: true, //stop autoplay when hover
       keyboard: true, //добавляет управление клавишами
       direction: "ltr", //промотка слева направо
