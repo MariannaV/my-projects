@@ -1,0 +1,38 @@
+<!--Счетчик-->
+
+Счётчик:
+<button data-counter>1</button>
+Ещё счётчик:
+<button data-counter>2</button>
+
+<script>
+    document.onclick = function (event) {
+        if (!event.target.hasAttribute('data-counter')) return;
+
+        var counter = event.target;
+
+        counter.innerHTML++;
+    };
+</script>
+
+
+<div class="for-buyer-item-amount">
+    <button data-counter-plus class="for-buyer-item-amount-minus">1</button>
+    <div class="for-buyer-item-amount-value">1</div>
+    <button data-counter-minus class="for-buyer-item-amount-plus">2</button>
+</div>
+<script>
+
+    var i = 0;
+    function test() {
+
+        i++;
+
+        timeR = setTimeout("test()", 100);
+
+        document.dataset.counterPlus().innerHTML = i;
+
+        if (i >= 50) { i = 0; }
+    }
+
+</script>
