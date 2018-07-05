@@ -18,6 +18,11 @@ body {
 .banner-block-ofd {
     position: relative;
     padding: 20px;
+    @media (max-width: 767px) {
+        // padding-top: 0px;
+        // padding-bottom: 0
+        padding: 0;
+    }
     @media (min-width: 1024px) {
         display: flex;
         padding: 96px 3vw;
@@ -25,6 +30,11 @@ body {
     @media (min-width: 1600px) {
         padding: 96px 13.8vw;
         justify-content: space-between;
+    }
+    &.sbis {
+        @media (max-width: 767px) {
+            padding-bottom: 10px;
+        }
     }
 }
 
@@ -43,13 +53,16 @@ body {
         padding-left: 5vw;
         padding-right: 5vw;
     }
+    @media (min-width: 1700px) {
+        margin-left: 4vw;
+    }
     .title-sbis {
         color: #00476c;
     }
     .title-platform-ofd {
         color: #25606d;
         &+.banner-information-ofd-p {
-            margin-top: 50px;
+            margin-top: 24px;
         }
     }
     .banner-information-ofd-title {
@@ -64,8 +77,7 @@ body {
         font-size: 20px;
         color: #333333;
         font-weight: 100;
-        width: 470px;
-        margin: 0;
+        width: 470px; // margin: 0;
         @media (min-width: 768px) and (max-width: 1023px) {
             margin: 0 auto;
             margin-top: 20px;
@@ -73,7 +85,7 @@ body {
         }
     }
     h1+p {
-        margin-top: 50px;
+        margin-top: 24px;
     }
 }
 
@@ -95,15 +107,21 @@ body {
     display: flex;
     align-items: center;
     @media (max-width: 767px) {
-        padding: 8px 0;
+        // padding: 8px 0;
+        padding-top: 8px;
     }
     @media (min-width: 768px) and (max-width: 1599px) {
         width: 645px;
         margin: 0 auto;
         margin-top: 35px;
     }
-    @media (min-width: 1600px) {}
-    margin-top: 0; // margin-left: 50px;
+    @media (min-width: 1600px) {
+        margin-top: 0; // margin-left: 50px;
+        max-width: 635px;
+    }
+    @media (min-width: 1700px) {
+        margin-right: 6.5vw;
+    }
 }
 
 // @media(min-width:990px) and (max-width: 1023px) {
@@ -113,16 +131,27 @@ body {
     margin-left: auto;
     border-radius: 4px;
     box-shadow: 1px 0 18px rgba(128, 132, 153, 0.5);
-    background-color: #ffffff;
-    padding: 30px;
+    background-color: #ffffff; // padding: 30px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 11px;
+    padding-bottom: 29px;
     margin-right: auto;
     text-align: center;
     @media (min-width: 768px) {
         width: 360px;
-    }
-    @media (min-width: 1600px) {
-        box-shadow: none; // margin-top: 80px;
-        margin-top: 30px;
+        box-shadow: 0 50px 100px rgb(37, 96, 109, 0.2);
+        padding-top: 18px;
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-bottom: 38px;
+    } // @media (min-width: 1600px) {
+    //     margin-top: 30px;
+    // }
+    &>img {
+        @media (min-width: 768px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -134,8 +163,8 @@ body {
     }
 }
 
-.ofd-placeholder::placeholder {
-    color: #d8dce6;
+.ofd-placeholder {
+    border-bottom: 1px solid #D8DCE6;
 }
 
 .banner-img {
@@ -152,22 +181,8 @@ body {
         height: calc(100% + 40px);
     }
     @media (min-width: 1024px) {
-        display: flex;
-        position: absolute;
-        left: 0;
-        top: -32px;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-    @media (min-width: 1600px) {
-        display: flex;
-        position: absolute;
-        left: 0;
-        top: -32;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+        top: 0;
+        margin-top: 0;
     }
     img {
         width: 100%;
@@ -185,17 +200,23 @@ body {
         padding-left: 13.8vw;
         padding-right: 13.8vw;
     }
+    @media(min-width: 1700px) {
+        padding-left: 18vw;
+        padding-right: 18vw;
+    }
 }
 
 .title-of-block-for-connection {
     font-family: "Museo Sans" Cyrl;
-    line-height: 51px;
-    font-size: 36px;
+    line-height: 34px;
+    font-size: 24px;
     font-weight: 500;
     color: #333333;
     text-align: center;
     @media (min-width: 768px) {
         text-align: left;
+        line-height: 51px;
+        font-size: 36px;
     }
 }
 
@@ -268,7 +289,7 @@ body {
     align-items: baseline;
     justify-content: center;
     text-align: center;
-    grid-gap: 5%;
+    grid-gap: 2%;
     @media (min-width: 768px) {
         justify-content: space-between;
     }
@@ -308,10 +329,26 @@ body {
     line-height: 28px;
     font-size: 20px;
     font-weight: 300;
+    @media(max-width: 1599px) {
+        padding: 0;
+        padding-left: 10px;
+        line-height: 20px;
+        font-size: 14px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+    }
+    @media (max-width:1599px) {
+        border-radius: 4px;
+    }
     & span {
         line-height: 51px;
         font-size: 36px;
         font-weight: 600;
+        @media(max-width: 1599px) {
+            line-height: 39px;
+            font-size: 28px;
+        }
         &:after {
             content: "";
             background-image: url(https://kkt365.ru/themes/evotor/assets/i/rur.svg);
@@ -320,6 +357,10 @@ body {
             display: inline-block;
             background-repeat: no-repeat;
             background-position-x: 6px;
+            @media(max-width: 1599px) {
+                background-size: 14px 19px;
+                background-position-y: 6px;
+            }
         }
     }
     &.light-blue {
@@ -388,6 +429,11 @@ body {
     @media (min-width: 1024px) {
         padding: 45px 13.8vw;
     }
+    @media (min-width: 1700px) {
+        padding-left: 12vw;
+        padding-right: 18vw;
+        grid-template-columns: repeat(3, minmax(20%, 340px));
+    }
 }
 
 .description-ofd {
@@ -399,15 +445,22 @@ body {
     & span {
         font-weight: 600;
     }
+    @media(max-width: 768px) {
+        line-height: 26px;
+    }
 }
 
 .block-description-ofd-title {
     font-family: "Museo Sans" Cyrl;
-    line-height: 34px;
-    font-size: 24px;
+    line-height: 28px;
+    font-size: 20px;
     font-weight: 700;
     color: #333333;
     margin: 0;
+    @media(min-width: 768px) {
+        line-height: 34px;
+        font-size: 24px;
+    }
 }
 
 .block-description-ofd-title+.description-ofd {
@@ -428,11 +481,46 @@ body {
         padding: 54px 7vw 96px 7vw;
     }
     @media (min-width: 1024px) {
-        padding-left: 13.8vw;
+        padding-left: 18vw;
         padding-right: 13.8vw;
     }
 }
 
 .form-for-connection-tarrifs>input:checked~label {
     color: red;
+}
+
+.container-for-block-with-tariffs.tariffs-inside {
+    @media (max-width: 1599px) {
+        margin-bottom: 25px;
+    }
+}
+
+.placeholder-form {
+    color: #A0A4AD;
+}
+
+.page-with-platform-ofd+.ofd-slider {
+    margin-top: 10px;
+}
+
+.ofd-form-with-inputs {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 225px;
+    @media(min-width: 1600px) {
+        min-width: 263px;
+    }
+}
+
+.ofd-form-button {
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.ofd-placeholder-name {
+    border-bottom: 1px solid #D8DCE6;
+    width: 100%;
 }

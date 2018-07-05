@@ -20,7 +20,7 @@
         bottom: 100px;
     }
     @media (min-width: 1920px) {
-        left: 13.8vw;
+        left: 18vw;
     }
 }
 
@@ -50,8 +50,8 @@
             font-weight: 700;
             color: black;
             &::before {
-                width: 100%;
-                background-color: #4BA1A5;
+                width: 100%; // background-color: #4BA1A5;
+                background-color: var(--line-color);
             }
         }
     }
@@ -98,3 +98,7 @@
         margin-left: 1px;
     }
 }
+
+// .ofd-slider-nav-buttons>button.glide__bullet--active::before {
+//     background-color: var(--line-color);
+// }
