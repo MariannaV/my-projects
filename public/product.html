@@ -123,7 +123,7 @@
                         -->
             <div class="col-md-12 vcenter col-xs-24">
               <div class="hidden-xs">
-                <p class="catalog__name text--bold text--medium30 ">Онлайн-касса Эвотор 7.2 смарт-терминал без ФН</p>
+                <p class="catalog__name product-title">Онлайн-касса Эвотор 7.2 смарт-терминал без ФН</p>
                 <br>
               </div>
 
@@ -131,7 +131,7 @@
 
               <!--описание-->
 
-              <p class="catalog__description text--small14 nomargin" itemprop="description">Работает без подзарядки до 14 часов. Подойдет курьерам, экспедиторам и выездной торговле. Полноценная касса
+              <p class="catalog__description text--small14 product-title-p nomargin" itemprop="description">Работает без подзарядки до 14 часов. Подойдет курьерам, экспедиторам и выездной торговле. Полноценная касса
                 под 54-ФЗ в компактном корпусе. В комплект поставки входят: смарт-терминал 7.3 с предустановленным ПО Evotor
                 POS.
               </p>
@@ -207,17 +207,23 @@
           <label onclick="accordionNavigation(event)" for="equipment-1">Характеристики</label>
         </div>
         <div class="nav-block">
-          <label onclick="accordionNavigation(event)" for="equipment-2">Условия оплаты и доставки</label>
+          <label onclick="accordionNavigation(event)" for="equipment-2">
+            <p>Условия оплаты и доставки</p>
+          </label>
         </div>
         <div class="nav-block">
-          <label onclick="accordionNavigation(event)" for="equipment-3">Задать вопрос</label>
+          <label onclick="accordionNavigation(event)" for="equipment-3">
+            <p>Задать вопрос</p>
+          </label>
         </div>
       </div>
 
       <div class="details-blocks container">
         <div class="details-block">
           <input type="radio" name="equipment" id="equipment-0" value="on" checked="">
-          <label for="equipment-0">Описание</label>
+          <label for="equipment-0">
+            <p class="details-block-content">Описание</p>
+          </label>
           <div class="details-content">
 
             <div class="details-content-text">
@@ -254,7 +260,9 @@
         </div>
         <div class="details-block">
           <input type="radio" name="equipment" id="equipment-1" value="on">
-          <label for="equipment-1">Характеристики</label>
+          <label for="equipment-1">
+            <p class="details-block-content">Характеристики</p>
+          </label>
           <div class="details-content">
 
             <div class="details-content-text">
@@ -702,7 +710,8 @@
         </div>
         <div class="details-block">
           <input type="radio" name="equipment" id="equipment-2" value="on">
-          <label for="equipment-2">Условия оплаты и доставки</label>
+          <label for="equipment-2">
+            <p class="details-block-content">Условия оплаты и доставки</label>
           <div class="details-content">
             <div class="details-content-text">
 
@@ -794,7 +803,8 @@
         </div>
         <div class="details-block">
           <input type="radio" name="equipment" id="equipment-3" value="on">
-          <label for="equipment-3">Задать вопрос</label>
+          <label for="equipment-3">
+            <p class="details-block-content">Задать вопрос</label>
           <div class="details-content">
             <div class="details-content-text">
               <form method="POST" data-request="form_dynamic::onRequest" class="form form_null" data-request-data="id:21" data-request-update="'form_dynamic::answer':'#answer21'"

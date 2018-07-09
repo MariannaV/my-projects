@@ -163,6 +163,9 @@
 .main-block {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 768px) {
+        position: relative;
+    }
 }
 
 .items-container {
@@ -194,6 +197,9 @@
     color: #21243c;
     @media(max-width: 767px) {
         margin-bottom: 0;
+    }
+    @media(max-width: 1600px) {
+        padding-left: 10px;
     }
 }
 
@@ -271,7 +277,7 @@
     transform: rotate(90deg);
     left: 8px;
     @media(min-width: 1600px) {
-        left: 8px;
+        left: 12px;
     }
 }
 
@@ -311,6 +317,9 @@
 
 .to-get-consultation+.block-with-buttons {
     margin-top: 1vw;
+    @media(min-width: 1600px) {
+        margin-top: -24px
+    }
 }
 
 .container-with-products-title {
@@ -319,6 +328,12 @@
     margin-top: 45px;
     @media (min-width: 768px) {
         margin-left: 13.8vw;
+    }
+    @media (min-width: 1600px) {
+        text-align: left;
+    }
+    @media (min-width: 1920px) {
+        margin-left: 21.8vw;
     }
 }
 
@@ -502,9 +517,8 @@
         padding-top: 82px;
         padding-bottom: 82px;
     }
-    @media (max-width: 1023px) {
-        padding-top: 77px; // padding-left: 19px;
-        // padding-right: 22px
+    @media (min-width: 1600px) {
+        padding-top: 33px;
     }
 }
 
@@ -517,25 +531,21 @@
 
 .details-block {
     &>label {
-        display: block;
-        line-height: 19px;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 1.2px;
-        padding: 12px;
-        padding-left: 23px;
-        border-top: 1px solid #b8c0d1;
-        border-bottom: 1px solid #b8c0d1;
-        cursor: pointer;
-        background-color: #edeff5;
-        width: 100%;
-        background-image: url("https://kkt365.ru/themes/evotor/assets/i/arrow-down.svg");
-        background-repeat: no-repeat;
-        background-position-x: 90%;
-        background-position-y: 50%;
-        @media (min-width: 768px) {
-            display: none;
+        &::before {
+            content: "";
+            display: block;
+            width: 84%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0px 10px 30px 0px #D7DAE0;
+            z-index: -1;
         }
+    }
+    @media (min-width: 768px) {
+        display: none;
     }
     &>input {
         display: none;
@@ -574,6 +584,9 @@
         padding-right: 13.8vw;
         padding-top: 59px;
         padding-bottom: 70px;
+        &>.catalog__description {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -604,6 +617,8 @@
 .nav-block {
     // padding-bottom: 15px;
     &>label {
+        font-size: 20px;
+        font-weight: 700;
         height: 100%;
         display: block;
         cursor: pointer;
@@ -764,6 +779,12 @@
 }
 
 .container-with-total-cost {
+    &>.button-basket-popup.start-button {
+        margin-right: 0;
+    }
+    &>.button-basket-popup+.get-invoice {
+        margin-left: 0;
+    }
     @media (max-width: 1599px) {
         display: none;
     }
@@ -901,6 +922,10 @@
     @media (min-width: 992px) {
         height: 426px;
     }
+    @media(min-width:1600px) {
+        max-height: 372px;
+        margin-top: 67px;
+    }
 }
 
 .form-consultation {
@@ -936,4 +961,58 @@
         border-radius: 5px;
         background: white;
     }
+}
+
+.product-title {
+    @media (min-width: 992px) {
+        line-height: 46px;
+        font-size: 36px;
+    }
+    @media (min-width: 1600px) {
+        margin-top: 62px;
+        padding-left: 17px;
+    }
+}
+
+.product-title-p {
+    @media (min-width: 1600px) {
+        padding-left: 14px;
+        padding-top: 13px;
+        line-height: 26px;
+        font-size: 18px;
+    }
+}
+
+.product-slider-nav-arrows-horizontal {
+    position: absolute;
+    top: 12%;
+    &>.product-slider-nav-arrows-left,
+    &>.product-slider-nav-arrows-rgiht {}
+    &>.product-slider-nav-arrows-left {}
+    &>.product-slider-nav-arrows-right {}
+    .product-slider-nav-arrows-right+.product-slider-nav-arrows-right {
+        margin-left: 280px;
+    }
+    @media(min-width: 768px) {
+        display: none;
+    }
+}
+
+.details-block-content {
+    display: block;
+    line-height: 19px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    padding: 12px;
+    padding-left: 23px;
+    border-top: 1px solid #b8c0d1;
+    border-bottom: 1px solid #b8c0d1;
+    cursor: pointer;
+    background-color: #edeff5;
+    width: 100%;
+    background-image: url("https://kkt365.ru/themes/evotor/assets/i/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 50%;
 }
