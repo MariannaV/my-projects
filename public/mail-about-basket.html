@@ -14,7 +14,7 @@
         }
 
         td[class="2-column"] {
-            padding: 10px;
+            /* padding: 10px; */
         }
 
         @media (max-width: 599px) {
@@ -31,6 +31,13 @@
                 /* width: 49%; */
                 /* max-width: 49%; */
                 /* min-width: 49%; */
+            }
+            td[class="price"] {
+                min-width: 80px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                text-align: center;
             }
         }
 
@@ -49,25 +56,25 @@
     <script async="" src="/browser-sync/browser-sync-client.js?v=2.23.6"></script>
 
     <!-- Шапка письма -->
-    <table style="width:100%;background-color:#FFFFFF;padding-top: 40px;
+    <table style="width:100%;background-color:#FFFFFF;padding-top: 43px;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;" cellspacing="0" cellpadding="0" border="0" bgcolor="#007DDD" align="center">
         <tbody>
             <tr>
-                <td width="20">&nbsp;</td>
                 <td width="50" valign="middle">
                     <a href="https://kkt365.ru/" title="kkt365.ru" target="_blank">
                         <img src="img/logo-lad-red.png" alt="kkt365.ru">
                     </a>
                 </td>
                 <td width="30">&nbsp;</td>
-                <td valign="middle" align="right">
-                    <p>Мы автоматизируем торговые точки и разрабатываем приложения для бизнеса</p>
+                <td valign="middle" align="left">
+                    <p style="line-height: 18px;
+                    font-size: 13px; color: #333333;margin-left: 51px;">Мы автоматизируем торговые точки и разрабатываем приложения для бизнеса</p>
                 </td>
 
                 <td valign="middle" align="right" style="width: 90px;">
-                    <a href="https://lad-3ndfl.ru/" title="3-НДФЛ" style="color:#FF5151 !important;text-decoration:none !important;line-height: 23px;  font-size: 16px;font-family:Tahoma, 'Sans-serif';"
+                    <a href="https://lad-3ndfl.ru/" title="3-НДФЛ" style="color:#FF5151 !important;text-decoration:none !important;line-height: 23px;  font-size: 16px;font-family:Tahoma, 'Sans-serif';    margin-left: 24px;"
                         target="_blank">kkt365.ru</a>
                 </td>
                 <td width="20">&nbsp;</td>
@@ -150,58 +157,62 @@
 
 
     <!--Товары-->
+
     <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
     padding-right: 40px;
-    padding-top: 12px;
-    padding-bottom: 13px;margin-left: auto; margin-right: auto;">
+    padding-top: 0px;
+    padding-bottom: 0px;margin-left: auto; margin-right: auto;">
         <tbody>
             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
                 <td valign="top" style="width:60px;">
-
-                    <img style="display: block;margin-left: auto;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;"
-                        src="img/online-cash.png" alt="Товар из корзины">
-                </td>
-                <td>
-                    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
-                padding-right: 40px;
-                padding-top: 12px;
-                padding-bottom: 13px;margin-left: auto; margin-right: auto;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 0px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 20px;margin-left: auto; margin-right: auto;border-bottom: 1px solid #A0A4AD;">
                         <tbody>
-                            <tr style="">
-                                <td valign="top">
+                            <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
-                                    <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: 24px;
-                          font-size: 16px;text-align: left;     max-width: 300px;
+                                <td valign="top" style="width:60px;">
+
+                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="img/online-cash.png"
+                                        alt="Товар из корзины">
+                                </td>
+
+
+                                <td valign="top" class="2-column">
+
+                                    <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
+                          font-size: 14px;text-align: left;     max-width: 340px;
                           width: 100%;
-                          margin-left: 20px;">
+                          margin-left: 3px;padding-top: 16px;">
                                         Онлайн-касса Эвотор 5 смарт-терминал без ФН
                                     </p>
 
                                 </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-                <td>
-                    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%; margin-left: auto; margin-right: auto; max-width: 70px;">
-                        <tbody>
-                            <tr style="">
-                                <td valign="top">
 
-                                    <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: 24px;
-                              font-size: 16px;text-align: left; ">
-                                        <span>1</span> 13890.-
+
+
+
+                                <td valign="top" style="width: 80px; " class="2-column">
+
+                                    <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
+                              font-size: 14px;text-align: left; padding-top: 16px; ">
+
+                                        <span style="color: #A0A4AD">1</span>
+                                        <span style="color: #A0A4AD"> × </span> 13890.-
                                     </p>
 
                                 </td>
+
                             </tr>
                         </tbody>
                     </table>
+
                 </td>
+
             </tr>
         </tbody>
     </table>
-
     <!---->
 
 
