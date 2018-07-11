@@ -1150,7 +1150,8 @@ transition: max-height 1s ease; */
 @media (min-width:1600px) {
     .banner-block-product>img {
         max-height: 372px;
-        margin-top: 67px
+        margin-top: 43px;
+        margin-left: 20px;
     }
 }
 
@@ -1196,7 +1197,7 @@ transition: max-height 1s ease; */
     .product-slider-nav-arrows {
         flex-direction: row;
         position: absolute;
-        top: 28%;
+        top: 41%;
         left: -4%;
         &>.product-slider-nav-arrows-up {
             background-image: url(https://kkt365.ru/themes/evotor/assets/i/arrow-left-product.svg);
