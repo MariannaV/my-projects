@@ -5,65 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="x-apple-disable-message-reformatting">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="telephone=no" name="format-detection">
-
 
     <style type="text/css">
         table {
             table-layout: fixed;
         }
 
-        td[class="2-column"] {
-            /* padding: 10px; */
-        }
-
-        @media (max-width: 599px) {
-            td[class="2-column"] {
-                display: block;
-                /* padding: 10px; */
-                vertical-align: top;
-                margin-left: 0;
-            }
-        }
-
-        @media only screen and (min-width: 600px) {
-            td[class="2-column"] {
-                /* display: inline-block; */
-                /* width: 49%; */
-                /* max-width: 49%; */
-                /* min-width: 49%; */
-            }
-
-        }
-
         * {
             box-sizing: border-box;
         }
+    </style>
 
-
-
-
-        @media (max-width: 499px) {
-            .mobile-text {
-
-                margin-top: 40px;
-                width: 100%;
-            }
-            .mobile-logo {
-                position: absolute;
-                top: 40px;
-                left: 70px;
-
-            }
-            .mobile-link {
-                position: absolute;
-                top: 40px;
-                right: 70px;
-
-            }
+    <style>
+        .header-test {
+            position: absolute;
         }
+    </style>
 
+    <style type="text/css">
         @media (max-width: 599px) {
+            td.column-2 {
+                display: block;
+                margin-left: 0;
+            }
+
 
             .footer {
                 margin-left: auto;
@@ -72,13 +37,8 @@
 
             .desktop-description {
                 margin-top: 13px;
-
-
             }
-
-
         }
-
 
         @media (min-width: 600px) {
             .desktop-price {
@@ -88,13 +48,31 @@
                 min-width: 340px;
 
             }
-            .desktop-button {
-                margin-left: 190px;
-            }
+
             .footer {
                 max-width: 174px;
             }
 
+        }
+    </style>
+    <style>
+        .mobile-logo {
+            float: left;
+
+        }
+
+        .mobile-link {
+            float: right;
+        }
+
+        .header-test {
+
+            width: 100%;
+            max-width: 600px;
+            background-color: #FFFFFF;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            /* padding-top: 50px; */
         }
     </style>
 
@@ -105,21 +83,31 @@
 
 
     <!-- Шапка письма -->
-    <table style="width:100%;background-color:#FFFFFF;
-    padding-bottom: 40px;
+    <table style="width:100%;max-width:600px;background-color:#FFFFFF;
+    
     padding-left: 40px;
-    padding-right: 49px;     padding-top: 50px;" cellspacing="0" cellpadding="0" border="0" bgcolor="#007DDD" align="center"
-        class="mobile-table">
+    padding-right: 49px; " cellspacing="0" cellpadding="0" border="0" bgcolor="#007DDD" align="center" class="mobile-table header-test">
         <tbody>
             <tr>
                 <td width="80" valign="middle" class="mobile-logo">
                     <a href="https://kkt365.ru/" title="kkt365.ru" target="_blank">
-                        <img src="img/logo-lad-red.png" alt="kkt365.ru">
+                        <img src="http://mailer.lad24.ru/uploadimages/image/logo-lad-red.png" alt="kkt365.ru">
                     </a>
                 </td>
-                <td valign="middle" align="left">
-                    <p style="line-height: 18px;
-                    font-size: 13px; color: #333333;margin-left: 51px;font-family:Arial, Tahoma, 'Sans-serif';" class="mobile-text">Мы автоматизируем торговые точки и разрабатываем приложения для бизнеса</p>
+                <td>
+                    <table class="mobile-header-text" style="width:100%;max-width:600px;background-color:#FFFFFF;
+                        padding-bottom: 40px;
+                        padding-left: 40px;
+                   padding-top: 50px;" cellspacing="0" cellpadding="0" border="0" bgcolor="#007DDD" align="center" class="mobile-table">
+                        <tbody>
+                            <tr>
+                                <td valign="middle" align="left">
+                                    <p style="line-height: 18px;
+                    font-size: 13px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';" class="mobile-text">Мы автоматизируем торговые точки и разрабатываем приложения для бизнеса</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </td>
 
                 <td valign="middle" align="right" style="width: 90px;" class="mobile-link">
@@ -133,12 +121,12 @@
     <!-- Конец шапки -->
 
     <!-- Контент 1я часть -->
-    <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;">
+    <table class="mobile-header-img" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;">
         <tbody>
             <tr style="display: block;">
                 <td>
                     <img style="display: block;margin-left: auto;margin-right: auto;height:auto;min-width: 163px;max-width:600px;width: 100%;"
-                        src="img/items-in-basket.png" alt="В вашей корзине остались товары">
+                        src="http://mailer.lad24.ru/uploadimages/image/items-in-basket.png" alt="В вашей корзине остались товары">
                 </td>
 
             </tr>
@@ -147,7 +135,7 @@
     <!-- Конец 1й части контента -->
     <!-- Контент  2я часть -->
 
-    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
+    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%; max-width:600px;  padding-left: 40px;
     padding-right: 40px;
     padding-top: 30px;
     padding-bottom: 13px;margin-left: auto; margin-right: auto;">
@@ -215,20 +203,20 @@
             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
                 <td valign="top" style="width:60px;">
                     <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 0px;
-    padding-right: 20px;
+    padding-right: 0px;
     padding-top: 3px;
-    padding-bottom: 7px;margin-left: auto; margin-right: auto;border-bottom: 1px solid #A0A4AD;">
+    padding-bottom: 7px;margin-left: auto; margin-right: auto;">
                         <tbody>
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
-                                <td valign="center" style="width:60px; height: 60px;">
+                                <td valign="center" class="desktop-description" style="width:60px; height: 76px;    border-bottom: 1px solid #A0A4AD;">
 
-                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="img/online-cash.png"
+                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/online-cash.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="2-column">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                           font-size: 14px;text-align: left;     max-width: 340px;
@@ -242,7 +230,7 @@
 
 
 
-                                <td valign="center" style="min-width: 80px; " class="2-column" style="padding: 0;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                               font-size: 14px;text-align: left;" class="desktop-price">
@@ -255,51 +243,32 @@
                                 </td>
 
                             </tr>
-                        </tbody>
-                    </table>
-
-                </td>
-
-            </tr>
-        </tbody>
-    </table>
-    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;margin-left: auto; margin-right: auto;">
-        <tbody>
-            <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
-                <td valign="top" style="width:60px;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 0px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 7px;margin-left: auto; margin-right: auto;border-bottom: 1px solid #A0A4AD;">
-                        <tbody>
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
-                                <td valign="center" style="width:60px;height: 60px;">
 
-                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="img/ofd.png"
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+
+                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/ofd.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="2-column">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                          font-size: 14px;text-align: left;     max-width: 340px;
-                          width: 100%;
-                          margin-left: 3px;" class="desktop-description  mobile-description ">Подключение к ОФД</p>
+                                          font-size: 14px;text-align: left;     max-width: 340px;
+                                          width: 100%;
+                                          margin-left: 3px;" class="desktop-description  mobile-description ">Подключение к ОФД</p>
 
                                 </td>
 
 
 
 
-                                <td valign="center" style="min-width: 80px; " class="2-column" style="padding: 0;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                              font-size: 14px;text-align: left;" class="desktop-price">
+                                              font-size: 14px;text-align: left;" class="desktop-price">
 
                                         <span style="color: #A0A4AD">1</span>
                                         <span style="color: #A0A4AD"> × </span>
@@ -308,51 +277,36 @@
 
                                 </td>
 
+
+
+
                             </tr>
-                        </tbody>
-                    </table>
-
-                </td>
-
-            </tr>
-        </tbody>
-    </table>
-    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;margin-left: auto; margin-right: auto;">
-        <tbody>
-            <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
-                <td valign="top" style="width:60px;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 0px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 7px;margin-left: auto; margin-right: auto;border-bottom: 1px solid #A0A4AD;">
-                        <tbody>
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
-                                <td valign="center" style="width:60px;height: 60px;">
 
-                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="img/weighter.png"
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+
+                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/weighter.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="2-column">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                          font-size: 14px;text-align: left;     max-width: 340px;
-                          width: 100%;
-                          margin-left: 3px;" class="desktop-description">
-                                        Весы ШТРИХ-Слим 300М 15-2,5 Д1Н
-                                    </p>
+                                          font-size: 14px;text-align: left;     max-width: 340px;
+                                          width: 100%;
+                                          margin-left: 3px;" class="desktop-description  mobile-description ">Весы ШТРИХ-Слим 300М 15-2,5 Д1Н</p>
 
                                 </td>
 
-                                <td valign="center" style="min-width: 80px; " class="2-column" style="padding: 0;">
+
+
+
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                              font-size: 14px;text-align: left;" class="desktop-price">
+                                              font-size: 14px;text-align: left;" class="desktop-price">
 
                                         <span style="color: #A0A4AD">1</span>
                                         <span style="color: #A0A4AD"> × </span>
@@ -361,54 +315,36 @@
 
                                 </td>
 
+
+
+
                             </tr>
-                        </tbody>
-                    </table>
-
-                </td>
-
-            </tr>
-        </tbody>
-    </table>
-    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;margin-left: auto; margin-right: auto;">
-        <tbody>
-            <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
-                <td valign="top" style="width:60px;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 0px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 7px;margin-left: auto; margin-right: auto;border-bottom: 1px solid #A0A4AD;">
-                        <tbody>
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
-                                <td valign="center" style="width:60px;height: 60px;">
 
-                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="img/driver-for-weighter.png"
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+
+                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/driver-for-weighter%281%29.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="2-column">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                          font-size: 14px;text-align: left;     max-width: 340px;
-                          width: 100%;
-                          margin-left: 3px;" class="desktop-description">
-                                        Драйвер для весов серии ШТРИХ-Слим
-                                    </p>
+                                          font-size: 14px;text-align: left;     max-width: 340px;
+                                          width: 100%;
+                                          margin-left: 3px;" class="desktop-description  mobile-description "> Драйвер для весов серии ШТРИХ-Слим</p>
 
                                 </td>
 
 
 
 
-                                <td valign="center" style="min-width: 80px; " class="2-column" style="padding: 0;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                              font-size: 14px;text-align: left;" class="desktop-price">
+                                              font-size: 14px;text-align: left;" class="desktop-price">
 
                                         <span style="color: #A0A4AD">1</span>
                                         <span style="color: #A0A4AD"> × </span>
@@ -417,54 +353,36 @@
 
                                 </td>
 
+
+
+
                             </tr>
-                        </tbody>
-                    </table>
-
-                </td>
-
-            </tr>
-        </tbody>
-    </table>
-    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;margin-left: auto; margin-right: auto;">
-        <tbody>
-            <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
-                <td valign="top" style="width:60px;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 0px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 7px;margin-left: auto; margin-right: auto;border-bottom: 1px solid #A0A4AD;">
-                        <tbody>
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
-                                <td valign="center" style="width:60px;height: 60px;">
 
-                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="img/display-for-buyer.png"
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+
+                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/display-for-buyer.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="2-column">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                          font-size: 14px;text-align: left;     max-width: 340px;
-                          width: 100%;
-                          margin-left: 3px;" class="desktop-description">
-                                        Дисплей покупателя ШТРИХ-Т D2-USB-MW
-                                    </p>
+                                          font-size: 14px;text-align: left;     max-width: 340px;
+                                          width: 100%;
+                                          margin-left: 3px;" class="desktop-description  mobile-description ">Дисплей покупателя ШТРИХ-Т D2-USB-MW</p>
 
                                 </td>
 
 
 
 
-                                <td valign="center" style="min-width: 80px; " class="2-column" style="padding: 0;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                              font-size: 14px;text-align: left;" class="desktop-price">
+                                              font-size: 14px;text-align: left;" class="desktop-price">
 
                                         <span style="color: #A0A4AD">1</span>
                                         <span style="color: #A0A4AD"> × </span>
@@ -473,54 +391,36 @@
 
                                 </td>
 
+
+
+
                             </tr>
-                        </tbody>
-                    </table>
-
-                </td>
-
-            </tr>
-        </tbody>
-    </table>
-    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;margin-left: auto; margin-right: auto;">
-        <tbody>
-            <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
-                <td valign="top" style="width:60px;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 0px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 7px;margin-left: auto; margin-right: auto;border-bottom: 1px solid #A0A4AD;">
-                        <tbody>
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
-                                <td valign="center" style="width:60px;height: 60px;">
 
-                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="img/driver-for-display.png"
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+
+                                    <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/driver-for-display.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="2-column">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                          font-size: 14px;text-align: left;     max-width: 340px;
-                          width: 100%;
-                          margin-left: 3px;" class="desktop-description">
-                                        Драйвер для дисплея покупателя ШТРИХ-Т
-                                    </p>
+                                          font-size: 14px;text-align: left;     max-width: 340px;
+                                          width: 100%;
+                                          margin-left: 3px;" class="desktop-description  mobile-description "> Драйвер для дисплея покупателя ШТРИХ-Т</p>
 
                                 </td>
 
 
 
 
-                                <td valign="center" style="min-width: 80px; " class="2-column" style="padding: 0;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
-                              font-size: 14px;text-align: left;" class="desktop-price">
+                                              font-size: 14px;text-align: left;" class="desktop-price">
 
                                         <span style="color: #A0A4AD">1</span>
                                         <span style="color: #A0A4AD"> × </span>
@@ -529,12 +429,13 @@
 
                                 </td>
 
+
+
+
                             </tr>
                         </tbody>
                     </table>
-
                 </td>
-
             </tr>
         </tbody>
     </table>
@@ -546,15 +447,15 @@
     <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:31px;padding-bottom:20px;    padding-left: 45px;
     padding-right: 35px;">
         <tbody>
-            <tr style="display: block;">
-                <td class="2-column" align="center">
+            <tr style="">
+                <td class="column-2">
                     <p style="line-height: normal;
                     font-size: 14px;           
                     color: #333333;font-family:Arial, Tahoma, 'Sans-serif';">
                         <span style=" color: #A0A4AD;">Итого: </span>
                         <span> 30690</span>.-</p>
                 </td>
-                <td class="2-column" align="center">
+                <td class="column-2" width="235px">
                     <a href="#" title="Оформить заказ" class="desktop-button" style="background-color:#FF5151;font-family:Arial, Tahoma, 'Sans-serif';line-height: 32px;
                     font-size: 18px;
                     text-align: center;font-weight:700;color:#FFFFFF !important;border-bottom:2px solid #FF5151;display:block;width:100%;padding-top:14px;padding-bottom:14px;text-decoration:none !important;max-width: 235px;min-width: 235px; border-radius: 50px; ">Оформить заказ
@@ -572,51 +473,57 @@
 
 
 
-    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 85px;">
+    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 85px;box-sizing: border-box;">
         <p style="line-height: 24px;
-        font-size: 16px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';">Количество товаров на складе ограничено. Они будут зарезервированы за вами только после оформления заказа.</p>
+        font-size: 16px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';">Количество товаров на складе ограничено. Они будут зарезервированы за вами только после оформления заказа.
+        </p>
     </div>
 
 
-    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 10px;">
+    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 10px;box-sizing: border-box;">
         <p style="line-height: 24px;
             font-size: 16px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';">Если во время оформления возникли трудности или вы хотите узнать больше о продукте, пожалуйста, позвоните нам —
             <span style="font-weight: 900">8 800 775 85 25 </span>
         </p>
     </div>
 
-    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 85px;">
+    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 85px;box-sizing: border-box;">
         <p style="line-height: 24px;
             font-size: 16px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';">С уважением, ГК ЛАД</p>
     </div>
     <!--Подвал-->
-    <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:52px;padding-bottom:35px;    padding-left: 40px;
-    padding-right: 35px; background-color: #FFF6DE;">
+    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;margin-left:auto;margin-right:auto;padding-top:52px;padding-bottom:35px;    padding-left: 40px;
+    padding-right: 35px; background-color: #FFF6DE; table-layout: fixed;">
         <tbody>
             <tr style="display: block;">
-                <td class="2-column" align="center">
+                <td class="column-2" align="center" style="padding-right: 38px;">
                     <p style="line-height: 25px;
                     font-size: 18px;           
                     color: #333333;font-family:Arial, Tahoma, 'Sans-serif'; font-weight:900;  " class="footer">
                         Присоединяйтесь к нам в соцсетях</p>
                 </td>
-                <td class="2-column footer-icons" align="center" style=" padding-left: 26px;">
-                    <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:0px;padding-bottom:0     px;    padding-left: 40px;
-                        padding-right: 35px; background-color: #FFF6DE;">
+                <td class="column-2 footer-icons" align="center" style=" width: 250px;">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;">
                         <tbody>
                             <tr style="display: block;">
-                                <td>
-                                    <a style="text-decoration: none;    margin-right: 26px;" href="#" title="kkt365.ru in Instagram" target="_blank">
-                                        <img src="img/inst-icon.png" alt="Instagram">
+                                <td style="display: inline-block; margin-right: 26px;">
+                                    <a style="text-decoration: none; display: block; " href="#" title="kkt365.ru in Instagram" target="_blank">
+                                        <img src="http://mailer.lad24.ru/uploadimages/image/inst-icon.png" alt="Instagram">
                                     </a>
-                                    <a style="text-decoration: none;     margin-right: 26px;" href="#" title="kkt365.ru in VK" target="_blank">
-                                        <img src="img/vk-icon.png" alt="VK">
+                                </td>
+                                <td style="display: inline-block; margin-right: 26px;">
+                                    <a style="text-decoration: none;  display: block; " href="#" title="kkt365.ru in VK" target="_blank">
+                                        <img src="http://mailer.lad24.ru/uploadimages/image/vk-icon.png" alt="VK">
                                     </a>
-                                    <a style="text-decoration: none;     margin-right: 26px;" href="#" title="kkt365.ru in Facebook" target="_blank">
-                                        <img src="img/facebook-icon.png" alt="Facebook">
+                                </td>
+                                <td style="display: inline-block; margin-right: 26px;">
+                                    <a style="text-decoration: none;  display: block;" href="#" title="kkt365.ru in Facebook" target="_blank">
+                                        <img src="http://mailer.lad24.ru/uploadimages/image/facebook-icon.png" alt="Facebook">
                                     </a>
-                                    <a style="text-decoration: none;" href="#" title="kkt365.ru in YouTube" target="_blank"></a>
-                                    <img src="img/youtube-icon.png" alt="YouTube">
+                                </td>
+                                <td style="display: inline-block;">
+                                    <a style="text-decoration: none;  display: block;" href="#" title="kkt365.ru in YouTube" target="_blank">
+                                        <img src="http://mailer.lad24.ru/uploadimages/image/youtube-icon.png" alt="YouTube">
                                     </a>
                                 </td>
                             </tr>
