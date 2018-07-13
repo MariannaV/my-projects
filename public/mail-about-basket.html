@@ -73,9 +73,16 @@
                 padding-left: 0px !important;
                 padding-top: 50px !important;
                 min-width: 200px !important;
+                display: none !important;
 
             }
 
+        }
+
+        @media(min-width: 500px) {
+            .desktop-header-text {
+                display: none;
+            }
         }
     </style>
 
@@ -106,21 +113,31 @@
                             <tr>
                                 <td valign="middle" align="left">
                                     <p style="line-height: 18px;
-                    font-size: 13px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';" class="mobile-text">Мы автоматизируем торговые точки и разрабатываем приложения для бизнеса</p>
+                    font-size: 13px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif'; " class="mobile-text">Мы автоматизируем торговые точки и разрабатываем приложения для бизнеса</p>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </td>
 
-                <td valign="middle" align="right" style="width: 90px;" class="mobile-link">
-                    <a href="https://lad-3ndfl.ru/" title="kkt365" style="display: block;color:#FF5151 !important;text-decoration:none !important;line-height: 23px;  font-size: 16px;font-family:Tahoma, 'Sans-serif';    margin-left: 0px;"
-                        target="_blank">kkt365.ru</a>
+                <td valign="middle" align="right" style="width: 100px;" class="mobile-link">
+                    <a href="https://kkt365.ru/" title="kkt365" style="display: inline-block;color:#FF5151 !important;text-decoration:none !important;line-height: 23px;  font-size: 16px;font-family:Tahoma, 'Sans-serif';    margin-left: 0px;"
+                        target="_blank">kkt365.ru
+
+                    </a>
+                    <img style="display: inhline-block; max-width: 12px; max-height: 12px;     vertical-align: bottom;" src="http://mailer.lad24.ru/uploadimages/image/cursor.png"
+                        alt="Курсор">
                 </td>
 
             </tr>
         </tbody>
     </table>
+    <p class="desktop-header-text" style="line-height: 18px;
+                    font-size: 13px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';padding-left: 40px;
+                    padding-right: 40px;
+                    text-align: center;
+                    padding-top: 20px;
+                    padding-bottom: 20px; " class="mobile-text">Мы автоматизируем торговые точки и разрабатываем приложения для бизнеса</p>
     <!-- Конец шапки -->
 
     <!-- Контент 1я часть -->
@@ -165,7 +182,9 @@
                 <td valign="top">
 
                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: 24px;
-                    font-size: 16px;text-align: left; ">Вы начали оформлять заказ в интернет-магазине kkt365.ru, но по какой-то причине не закончили.</p>
+                    font-size: 16px;text-align: left;max-width: 600px;
+                    margin-left: auto;
+                    margin-right: auto; ">Вы начали оформлять заказ в интернет-магазине kkt365.ru, но по какой-то причине не закончили.</p>
 
                 </td>
 
@@ -184,7 +203,9 @@
                 <td valign="top">
 
                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: 24px;
-                      font-size: 16px;text-align: left; ">
+                      font-size: 16px;text-align: left;max-width: 600px;
+                      margin-left: auto;
+                      margin-right: auto; ">
                         Мы сохранили содержимое
                         <a href="#" style="color:#2A7DD1; text-decoration-color: rgba(42, 125, 209, 0.3)">вашей корзины:</a>
                     </p>
@@ -198,7 +219,7 @@
 
     <!--Товары-->
 
-    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;   padding-left: 40px;
+    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%; max-width: 600px;  padding-left: 40px;
     padding-right: 40px;
     padding-top: 0px;
     padding-bottom: 0px;margin-left: auto; margin-right: auto;">
@@ -212,14 +233,14 @@
                         <tbody>
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
-                                <td valign="center" class="desktop-description" style="width:60px; height: 76px;    border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" class="desktop-description" style="width:60px; height: 76px;    border-bottom: 1px solid #D8DCE6;">
 
                                     <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/online-cash.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #D8DCE6;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                           font-size: 14px;text-align: left;     max-width: 340px;
@@ -233,7 +254,7 @@
 
 
 
-                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #D8DCE6;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                               font-size: 14px;text-align: left;" class="desktop-price">
@@ -249,14 +270,14 @@
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
 
-                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #D8DCE6;">
 
                                     <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/ofd.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #D8DCE6;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                           font-size: 14px;text-align: left;     max-width: 340px;
@@ -268,7 +289,7 @@
 
 
 
-                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #D8DCE6;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                               font-size: 14px;text-align: left;" class="desktop-price">
@@ -287,14 +308,14 @@
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
 
-                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #D8DCE6;">
 
                                     <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/weighter.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #D8DCE6;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                           font-size: 14px;text-align: left;     max-width: 340px;
@@ -306,7 +327,7 @@
 
 
 
-                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #D8DCE6;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                               font-size: 14px;text-align: left;" class="desktop-price">
@@ -325,14 +346,14 @@
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
 
-                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #D8DCE6;">
 
                                     <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/driver-for-weighter%281%29.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #D8DCE6;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                           font-size: 14px;text-align: left;     max-width: 340px;
@@ -344,7 +365,7 @@
 
 
 
-                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #D8DCE6;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                               font-size: 14px;text-align: left;" class="desktop-price">
@@ -363,14 +384,14 @@
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
 
-                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #D8DCE6;">
 
                                     <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/display-for-buyer.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #D8DCE6;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                           font-size: 14px;text-align: left;     max-width: 340px;
@@ -382,7 +403,7 @@
 
 
 
-                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #D8DCE6;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                               font-size: 14px;text-align: left;" class="desktop-price">
@@ -401,14 +422,14 @@
                             <tr style="width:100%;max-width:600px;margin-left:0;margin-right:0;">
 
 
-                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" style="width:60px;height: 76px;border-bottom: 1px solid #D8DCE6;">
 
                                     <img style="display: block;margin-right: auto;height:auto;min-width: 40px;max-width:40px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/driver-for-display.png"
                                         alt="Товар из корзины">
                                 </td>
 
 
-                                <td valign="center" class="column-2" style="border-bottom: 1px solid #A0A4AD;">
+                                <td valign="center" class="column-2" style="border-bottom: 1px solid #D8DCE6;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                           font-size: 14px;text-align: left;     max-width: 340px;
@@ -420,7 +441,7 @@
 
 
 
-                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #A0A4AD;min-width: 80px;">
+                                <td valign="center" class="column-2" style="padding: 0;border-bottom: 1px solid #D8DCE6;min-width: 80px;">
 
                                     <p style="color:#333333 !important;font-family:Arial,Tahoma,'Sans-serif';line-height: normal;
                                               font-size: 14px;text-align: left;" class="desktop-price">
@@ -476,31 +497,38 @@
 
 
 
-    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 85px;box-sizing: border-box;">
+    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 85px;box-sizing: border-box;max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;">
         <p style="line-height: 24px;
         font-size: 16px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';">Количество товаров на складе ограничено. Они будут зарезервированы за вами только после оформления заказа.
         </p>
     </div>
 
 
-    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 10px;box-sizing: border-box;">
+    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 10px;box-sizing: border-box;max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;">
         <p style="line-height: 24px;
             font-size: 16px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';">Если во время оформления возникли трудности или вы хотите узнать больше о продукте, пожалуйста, позвоните нам —
             <span style="font-weight: 900">8 800 775 85 25 </span>
         </p>
     </div>
 
-    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 85px;box-sizing: border-box;">
+    <div style="background-color:#FFFFFF;width:100%;text-align:left;padding-top: 0px;padding-bottom: 0px; padding-left: 40px; padding-right: 85px;box-sizing: border-box;max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;">
         <p style="line-height: 24px;
             font-size: 16px; color: #333333;font-family:Arial, Tahoma, 'Sans-serif';">С уважением, ГК ЛАД</p>
     </div>
     <!--Подвал-->
-    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;margin-left:auto;margin-right:auto;padding-top:52px;padding-bottom:35px;    padding-left: 40px;
+    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;margin-left:auto;margin-right:auto; max-width:600px;padding-top:52px;padding-bottom:35px;    padding-left: 40px;
     padding-right: 35px; background-color: #FFF6DE; table-layout: fixed;">
         <tbody>
             <tr style="display: block;">
                 <td class="column-2" align="center" style="padding-right: 38px;">
-                    <p style="line-height: 25px;
+                    <p style="line-height: 25px;line-height: 21px;
+                    font-size: 14px;
                     font-size: 18px;           
                     color: #333333;font-family:Arial, Tahoma, 'Sans-serif'; font-weight:900;  " class="footer">
                         Присоединяйтесь к нам в соцсетях</p>
@@ -510,22 +538,24 @@
                         <tbody>
                             <tr style="display: block;">
                                 <td style="display: inline-block; margin-right: 26px;">
-                                    <a style="text-decoration: none; display: block; " href="#" title="kkt365.ru in Instagram" target="_blank">
+                                    <a style="text-decoration: none; display: block; " href="https://www.instagram.com/kkt365/" title="kkt365.ru in Instagram"
+                                        target="_blank">
                                         <img src="http://mailer.lad24.ru/uploadimages/image/inst-icon.png" alt="Instagram">
                                     </a>
                                 </td>
                                 <td style="display: inline-block; margin-right: 26px;">
-                                    <a style="text-decoration: none;  display: block; " href="#" title="kkt365.ru in VK" target="_blank">
+                                    <a style="text-decoration: none;  display: block; " href="https://vk.com/kkt365" title="kkt365.ru in VK" target="_blank">
                                         <img src="http://mailer.lad24.ru/uploadimages/image/vk-icon.png" alt="VK">
                                     </a>
                                 </td>
                                 <td style="display: inline-block; margin-right: 26px;">
-                                    <a style="text-decoration: none;  display: block;" href="#" title="kkt365.ru in Facebook" target="_blank">
+                                    <a style="text-decoration: none;  display: block;" href="https://www.facebook.com/kkt365" title="kkt365.ru in Facebook" target="_blank">
                                         <img src="http://mailer.lad24.ru/uploadimages/image/facebook-icon.png" alt="Facebook">
                                     </a>
                                 </td>
                                 <td style="display: inline-block;">
-                                    <a style="text-decoration: none;  display: block;" href="#" title="kkt365.ru in YouTube" target="_blank">
+                                    <a style="text-decoration: none;  display: block;" href="https://www.youtube.com/channel/UCHahTZ2jQcy5massQ8RiKAw" title="kkt365.ru in YouTube"
+                                        target="_blank">
                                         <img src="http://mailer.lad24.ru/uploadimages/image/youtube-icon.png" alt="YouTube">
                                     </a>
                                 </td>
