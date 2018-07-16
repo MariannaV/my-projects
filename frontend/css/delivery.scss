@@ -1,0 +1,58 @@
+@import "helpers/_postcss-reset.scss";
+@import "fonts/fonts.scss";
+body {
+    font-family: "Museo Sans", sans-serif;
+    overflow-x: hidden;
+    color: #333333;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.page-nav {
+    display: flex;
+    &>a {
+        line-height: normal;
+        font-size: 12px;
+        font-weight: 300;
+        color: #333333;
+        font-family: Museo Sans Cyrl;
+        &>span {
+            color: #FF7800;
+        }
+    }
+}
+
+.block-with-information-about-delivery {
+    &>h1 {
+        line-height: 49px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    &>p {
+        font-family: Museo Sans Cyrl;
+        line-height: 23px;
+        font-size: 16px;
+        font-weight: 300;
+        &>a {
+            color: #2A7DD1;
+        }
+    }
+    &>a {
+        display: block;
+        color: #2A7DD1;
+        text-decoration: underline;
+        text-decoration-color: rgba(42, 125, 209, 0.3)
+    }
+    &>h1+p {
+        margin-top: 20px;
+    }
+    &>p+p {
+        margin-top: 20px;
+    }
+}
+
+.page-nav+.block-with-information-about-delivery {
+    margin-top: 5px;
+}
