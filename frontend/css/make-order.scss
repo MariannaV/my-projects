@@ -1,0 +1,91 @@
+@import "helpers/_postcss-reset.scss";
+.order-page {
+    font-family: "Museo Sans", sans-serif;
+    overflow-x: hidden;
+    color: #333333;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.page-nav {
+    display: flex;
+    &>a {
+        line-height: normal;
+        font-size: 12px; // font-weight: 300;font-family: Museo Sans Cyrl;
+        color: #333333;
+        font-family: 'museo_sans_cyrl300', Arial, serif;
+        &>span {
+            color: #FF7800;
+        }
+    }
+    &+.block-with-all-information-about-order {
+        margin-top: 15px;
+    }
+}
+
+.block-with-all-information-about-order {
+    @media(min-width: 1599px) {}
+}
+
+.block-with-information-about-order {
+    &>.title-how-make-an-order {
+        line-height: normal;
+        font-size: 28px; // font-weight: 700;
+        font-family: 'museo_sans_cyrl700', Arial, serif;
+        @media(min-width: 1599px) {
+            line-height: 84px;
+            font-size: 48px;
+        }
+    }
+    &>a {
+        line-height: 26px;
+        font-size: 18px;
+        display: block;
+        color: #2A7DD1;
+        font-family: 'museo_sans_cyrl500', Arial, serif;
+        text-decoration: underline;
+        text-decoration-color: rgba(42, 125, 209, 0.3);
+    }
+}
+
+.title-how-make-an-order+.information-how-make-an-order {
+    margin-top: 35px;
+}
+
+.information-how-make-an-order {
+    list-style: decimal !important;
+    line-height: 23px;
+    font-size: 16px;
+    color: #333333;
+    font-family: 'museo_sans_cyrl300', Arial, serif;
+    &>li {
+        list-style-position: inside;
+        &>a {
+            color: #2A7DD1;
+            text-decoration: underline;
+            text-decoration-color: rgba(42, 125, 209, 0.3);
+            font-family: 'museo_sans_cyrl500', Arial, serif;
+        }
+        &>span {
+            font-family: 'museo_sans_cyrl700', Arial, serif;
+        }
+        &>p {
+            background-color: #F7F8FB;
+            color: #7D7D7D;
+            padding-left: 18px;
+            padding-right: 18px;
+            padding-top: 11px;
+            padding-bottom: 12px;
+            margin-top: 10px;
+        }
+    }
+    &>li+li {
+        margin-top: 15px;
+    }
+    @media(min-width: 1599px) {
+        line-height: 26px;
+        font-size: 18px;
+    }
+}
