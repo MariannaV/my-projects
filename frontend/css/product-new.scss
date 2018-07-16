@@ -342,12 +342,24 @@
     padding-left: 34px;
 }
 
+@media(max-width: 767px) {
+    .item-price+.for-buyer-item-amount {
+        margin-left: 13px;
+    }
+}
+
 .block-with-price-and-buttons {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     display: flex;
     justify-content: center;
+    @media (min-width: 1600px) {
+        justify-content: initial;
+    }
+    @media(max-width:767px) {
+        margin-top: 22px;
+    }
 }
 
 .block-with-description {
@@ -855,6 +867,9 @@
     max-height: 100%;
     /* padding-bottom: 100px; */
     object-fit: contain;
+    @media(max-width: 767px) {
+        max-width: 230px;
+    }
 }
 
 .form-consultation {
@@ -1260,4 +1275,8 @@
 
 .container-with-total-cost {
     position: relative;
+}
+
+.counter-sum {
+    margin: 0;
 }

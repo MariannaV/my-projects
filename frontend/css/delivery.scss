@@ -1,6 +1,6 @@
 @import "helpers/_postcss-reset.scss";
 @import "fonts/fonts.scss";
-body {
+.delivery-page {
     font-family: "Museo Sans", sans-serif;
     overflow-x: hidden;
     color: #333333;
@@ -14,36 +14,58 @@ body {
     display: flex;
     &>a {
         line-height: normal;
-        font-size: 12px;
-        font-weight: 300;
+        font-size: 12px; // font-weight: 300;font-family: Museo Sans Cyrl;
         color: #333333;
-        font-family: Museo Sans Cyrl;
+        font-family: 'museo_sans_cyrl300', Arial, serif;
         &>span {
             color: #FF7800;
         }
     }
 }
 
+.block-with-all-information-about-delivery {
+    @media(min-width: 1599px) {
+        display: flex !important;
+    }
+}
+
 .block-with-information-about-delivery {
-    &>h1 {
+    &>.terms-of-delivery {
         line-height: 49px;
-        font-size: 28px;
-        font-weight: 700;
+        font-size: 28px; // font-weight: 700;
+        font-family: 'museo_sans_cyrl700', Arial, serif;
+        @media(min-width: 1599px) {
+            line-height: 84px;
+            font-size: 48px;
+        }
     }
     &>p {
-        font-family: Museo Sans Cyrl;
+        // font-family: Museo Sans Cyrl;font-weight: 300;
         line-height: 23px;
         font-size: 16px;
-        font-weight: 300;
+        font-family: 'museo_sans_cyrl300', Arial, serif;
+        @media(min-width: 1599px) {
+            line-height: 26px;
+            font-size: 18px;
+        }
         &>a {
             color: #2A7DD1;
+            font-family: 'museo_sans_cyrl500', Arial, serif;
+            text-decoration-color: rgba(42, 125, 209, 0.3);
         }
     }
     &>a {
         display: block;
         color: #2A7DD1;
         text-decoration: underline;
-        text-decoration-color: rgba(42, 125, 209, 0.3)
+        text-decoration-color: rgba(42, 125, 209, 0.3);
+        line-height: 26px;
+        font-size: 16px;
+        font-family: 'museo_sans_cyrl500', Arial, serif;
+        @media(min-width: 1599px) {
+            line-height: 32px;
+            font-size: 18px;
+        }
     }
     &>h1+p {
         margin-top: 20px;
@@ -51,8 +73,35 @@ body {
     &>p+p {
         margin-top: 20px;
     }
+    &>p+a {
+        margin-top: 35px;
+        @media(min-width: 1599px) {
+            margin-top: 50px;
+        }
+    }
+    &>a+a {
+        margin-top: 5px;
+    }
+}
+
+.delivery-block-with-img {
+    min-width: 280px;
+    min-height: 240px;
+    object-fit: contain;
+    @media(min-width: 1599px) {
+        min-width: 328px;
+        min-height: 280px;
+    }
 }
 
 .page-nav+.block-with-information-about-delivery {
     margin-top: 5px;
+}
+
+.block-with-information-about-delivery+.delivery-block-with-img {
+    margin-top: 45px;
+    @media (min-width: 1599px) {
+        margin-left: 65px;
+        margin-top: 0;
+    }
 }
