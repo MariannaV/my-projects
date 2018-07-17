@@ -1,0 +1,168 @@
+@media (max-width: 1599px) {
+    .container-with-total-cost {
+        display: none;
+    }
+}
+
+.container-with-total-cost {
+    position: relative;
+    height: 100px;
+}
+
+.container-with-total-cost * {
+    box-sizing: border-box;
+}
+
+.container-with-total-cost>input {
+    display: none;
+}
+
+.container-with-total-cost>input:checked {}
+
+.container-with-total-cost>input:not(:checked) {}
+
+.container-with-total-cost>input:checked+.total-cost-content>.total-cost-content-button-1,
+.container-with-total-cost>input:checked+.total-cost-content>.total-cost-content-button-2,
+.container-with-total-cost>input:checked+.total-cost-content>.total-cost-content-button-3 {
+    max-width: 0;
+    overflow: hidden;
+    filter: opacity(0);
+    pointer-events: none;
+}
+
+/*КОНТЕЙНЕР */
+
+.container-with-total-cost>.total-cost-content {
+    background-color: rgba(60, 63, 82, 0.8);
+    height: 100px;
+    grid-template-areas: "price . button-1 . button-2 . link . cart";
+    grid-template-columns: max-content 30px max-content 20px max-content 20px max-content 30px max-content;
+    display: grid !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100vw + 50px);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 10px 30px 10px 60px;
+    justify-content: flex-end;
+    align-items: center;
+    transition: width 0.7s;
+    overflow: hidden;
+    opacity: 1 !important;
+}
+
+.container-with-total-cost>input:checked+.total-cost-content {
+    grid-template-columns: max-content 0px 0px 0px 0px 0px 0px 20px max-content;
+    width: 330px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* padding-left: 30px; */
+}
+
+.container-with-total-cost>input:not(:checked)+.total-cost-content {
+    transition-duration: 0.7s, 0s, 0s;
+    transition-property: width, border-top-left-radius, border-bottom-left-radius;
+    transition-delay: 0s, 1s, 1s;
+}
+
+/*ЦЕНА*/
+
+.container-with-total-cost .total-cost-content-price {
+    grid-area: price;
+    display: flex;
+    align-items: center;
+    color: #b8c0d1;
+    font-size: 16px;
+}
+
+.container-with-total-cost .total-cost-content-price>.cartReplacerTotalSum {
+    margin-left: 15px;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.container-with-total-cost .total-cost-content-price>.cartReplacerTotalSum::after {
+    content: "";
+    background-image: url(https://kkt365.ru/themes/evotor/assets/i/rub.svg);
+    min-width: 13px;
+    min-height: 18px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+}
+
+/* КНОПКА 1*/
+
+.container-with-total-cost .total-cost-content-button-1 {
+    grid-area: button-1;
+    transition: initial;
+}
+
+/* КНОПКА 2*/
+
+.container-with-total-cost .total-cost-content-button-2 {
+    grid-area: button-2;
+}
+
+.container-with-total-cost .total-cost-content-button-3 {
+    grid-area: link;
+}
+
+/*КНОПКА-ПЕРЕКЛЮЧАТЕЛЬ */
+
+.container-with-total-cost .total-cost-content-toggle {
+    grid-area: cart;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background-image: initial;
+    border: none;
+    border-radius: initial;
+}
+
+.container-with-total-cost .total-cost-content-toggle:hover {
+    background-image: initial;
+}
+
+.container-with-total-cost .total-cost-content-toggle::before,
+.container-with-total-cost .total-cost-content-toggle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: filter 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.container-with-total-cost .total-cost-content-toggle::before {
+    border: 2px solid #d8dce6;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://kkt365.ru/themes/evotor/assets/i/icon-close-gray.svg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.container-with-total-cost .total-cost-content-toggle::after {
+    background-image: url(https://kkt365.ru/themes/evotor/assets/i/basket-card.svg);
+    width: 60px;
+    height: 60px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    border: 1px solid #ff7800;
+    background-color: #ff7800;
+    border-radius: 50%;
+    background-position-x: 42%;
+    background-position-y: 50%;
+    margin-left: auto;
+}
+
+.container-with-total-cost>input:checked+.total-cost-content .total-cost-content-toggle::before,
+.container-with-total-cost>input:not(:checked)+.total-cost-content .total-cost-content-toggle::after {
+    filter: opacity(0);
+}
