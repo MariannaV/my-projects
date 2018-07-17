@@ -6,7 +6,11 @@
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 56px;
+    @media(min-width: 1600px) {
+        padding-top: 27px;
+        padding-bottom: 80px;
+    }
 }
 
 .page-nav {
@@ -20,24 +24,39 @@
             color: #FF7800;
         }
     }
-    &+.block-with-all-information-about-order {
+    &+.title-how-make-an-order {
         margin-top: 15px;
+        @media(min-width: 1600px) {
+            margin-top: 6px;
+        }
     }
 }
 
 .block-with-all-information-about-order {
-    @media(min-width: 1599px) {}
+    @media(min-width: 1600px) {
+        display: flex;
+    }
+}
+
+.title-how-make-an-order {
+    line-height: normal;
+    font-size: 28px; // font-weight: 700;
+    font-family: 'museo_sans_cyrl700', Arial, serif;
+    @media(min-width: 1599px) {
+        line-height: 84px;
+        font-size: 48px;
+    }
+    &+.block-with-all-information-about-order {
+        margin-top: 30px;
+        @media(min-width: 1600px) {
+            margin-top: 20px;
+        }
+    }
 }
 
 .block-with-information-about-order {
-    &>.title-how-make-an-order {
-        line-height: normal;
-        font-size: 28px; // font-weight: 700;
-        font-family: 'museo_sans_cyrl700', Arial, serif;
-        @media(min-width: 1599px) {
-            line-height: 84px;
-            font-size: 48px;
-        }
+    &>a+a {
+        margin-top: 15px;
     }
     &>a {
         line-height: 26px;
@@ -47,6 +66,12 @@
         font-family: 'museo_sans_cyrl500', Arial, serif;
         text-decoration: underline;
         text-decoration-color: rgba(42, 125, 209, 0.3);
+    }
+    &+.order-block-with-img {
+        margin-top: 55px;
+        @media(min-width: 1600px) {
+            margin-top: 32px;
+        }
     }
 }
 
@@ -83,9 +108,24 @@
     }
     &>li+li {
         margin-top: 15px;
+        @media(min-width: 1600px) {
+            margin-top: 30px;
+        }
     }
     @media(min-width: 1599px) {
         line-height: 26px;
         font-size: 18px;
+    }
+    &+a {
+        margin-top: 42px;
+    }
+}
+
+.order-block-with-img {
+    max-width: 344px;
+    max-height: 336px;
+    @media(min-width: 1600px) {
+        min-width: 344px;
+        min-height: 336px;
     }
 }

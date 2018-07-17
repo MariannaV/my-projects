@@ -484,6 +484,12 @@
     max-height: 9999px;
 }
 
+@media(max-width:767px) {
+    .details-block>input:checked~.details-content:first-of-type {
+        border-top: 1px solid #b8c0d1;
+    }
+}
+
 /* .details-block>input:not(:checked)~.details-content {*/
 
 /*     display: none;*/
@@ -1279,4 +1285,10 @@
 
 .counter-sum {
     margin: 0;
+}
+
+@media(max-width:767px) {
+    .details-content .last-elem {
+        border-top: 1px solid #b8c0d1;
+    }
 }
