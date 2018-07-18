@@ -24,26 +24,33 @@
                 display: block;
                 margin-left: 0;
             }
+            .mobile-price-img {
+                margin-left: auto !important;
+                margin-right: auto !important;
+                padding-bottom: 10px !important;
+                padding-top: 15px !important;
+            }
 
+
+            .mobile-table-price {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
 
             .footer {
                 margin-left: auto;
                 margin-right: auto;
             }
 
-            .desktop-description {
-                margin-top: 13px;
+            .mobile-button {
+                margin-left: 1px !important;
+            }
+            .mobile-price-p {
+                width: 100% !important;
             }
         }
 
         @media (min-width: 600px) {
-            .desktop-price {
-                margin-left: 140px;
-            }
-            .desktop-description {
-                min-width: 340px;
-
-            }
 
             .footer {
                 max-width: 174px;
@@ -75,6 +82,22 @@
                 min-width: 200px !important;
                 display: none !important;
 
+            }
+            .mobile-paddings {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .mobile-ol {
+                padding-right: 20px !important;
+
+            }
+
+            .mobile-table-with-item {
+
+                padding-left: 20px !important;
+            }
+            .mobile-margin {
+                margin-left: 0 !important;
             }
 
         }
@@ -141,32 +164,35 @@
     <!-- Конец шапки -->
     <img style="display: block;margin-left: auto;margin-right: auto;height:auto;min-width: 163px;max-width:600px;width: 100%;"
         src="http://mailer.lad24.ru/uploadimages/image/evo-hand.png" alt="В вашей корзине остались товары">
-    <p style="line-height: 31px; font-size: 24px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 24px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;
+    <p class="mobile-paddings" style="line-height: 31px; font-size: 24px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 24px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;     margin-left: auto;
+    margin-right: auto;
 ">Здравствуйте!</p>
 
-    <p style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 8px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 8px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;     margin-left: auto;
+    margin-right: auto;
 ">Вы получили это письмо, потому что покупали у нас кассовую технику или пользовались услугами по регистрации ККТ.
     </p>
-    <p style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;    margin-left: auto;
+    margin-right: auto;
 ">Напоминаем, что скоро истекает срок действия фискального накопителя 13 месяцев. Если вы купили его примерно год назад,
         то уже пора менять.
     </p>
-    <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:31px;padding-bottom:20px;    padding-left: 45px;
+    <table class="mobile-table-with-item" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:31px;padding-bottom:0px;    padding-left: 45px;
     padding-right: 35px;">
         <tbody>
             <tr style="">
-                <td class="column-2" width="110px" style="vertical-align: top;
+                <td class="column-2  mobile-price-img" width="110px" style="vertical-align: top;
                 padding-top: 36px;">
                     <img style="display: block;margin-right: auto;height:auto;min-width: 50px;max-width:110px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/FN-13.png"
                         alt="Фискальный накопитель на 13 месяцев с договором ОФД на 1 год">
                 </td>
                 </td>
                 <td class="column-2" width="">
-                    <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:21px;padding-bottom:20px;    padding-left: 52px;
-                        padding-right: 35px;">
+                    <table class="mobile-table-price" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:21px;padding-bottom:20px;    padding-left: 52px;
+                        padding-right: 0px;">
                         <tbody>
                             <tr style="">
                                 <td class="">
@@ -180,10 +206,54 @@
                                     font-size: 40px; font-family:Arial, Tahoma, 'Sans-serif';font-weight:700;color: #333333;    margin: 0; vertical-align: bottom;">9000
                                         <img src="http://mailer.lad24.ru/uploadimages/image/fn-rur.png" alt="рублей">
                                     </p>
-                                    <a href="#" title="Заказать" class="" style="background-color:#FF5151;font-family:Arial, Tahoma, 'Sans-serif';line-height: 32px;
+                                    <a href="#" title="Заказать" class="mobile-button " style="background-color:#FF5151;font-family:Arial, Tahoma, 'Sans-serif';line-height: 32px;
                                         font-size: 18px;
                                         text-align: center;font-weight:700;color:#FFFFFF !important;border-bottom:2px solid #FF5151;display:inline-block;width:100%;padding-top:14px;padding-bottom:14px;text-decoration:none !important;max-width: 163px;min-width:163px; border-radius: 50px;margin-top: 8px;
-                                        margin-left: 30px; ">Заказать
+                                        margin-left: 74px; ">Заказать
+
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <table class="mobile-table-with-item" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:0px;padding-bottom:20px;    padding-left: 45px;
+    padding-right: 35px;">
+        <tbody>
+            <tr style="">
+                <td class="column-2  mobile-price-img" width="110px" style="vertical-align: top;
+                padding-top: 27px;">
+                    <img style="display: block;margin-right: auto;height:auto;min-width: 50px;max-width:110px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/FN-13.png"
+                        alt="Фискальный накопитель на 13 месяцев с договором ОФД на 1 год">
+                </td>
+                </td>
+                <td class="column-2" width="">
+                    <table class="mobile-table-price" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:10px;padding-bottom:20px;    padding-left: 52px;
+                        padding-right: 0px;">
+                        <tbody>
+                            <tr style="">
+                                <td class="">
+                                    <p style="line-height: 21px;
+                                    font-size: 16px;font-family:Arial, Tahoma, 'Sans-serif';color: #333333;">Фискальный накопитель на 36 месяцев с договором ОФД на 1 год</p>
+                                </td>
+                            </tr>
+                            <tr style="">
+                                <td class="">
+                                    <p style="display:inline-block;line-height: 52px;
+                                    font-size: 40px; font-family:Arial, Tahoma, 'Sans-serif';font-weight:700;color: #333333;    margin: 0; vertical-align: bottom;">16 000
+                                        <img src="http://mailer.lad24.ru/uploadimages/image/fn-rur.png" alt="рублей">
+                                    </p>
+                                    <a href="#" title="Заказать" class="mobile-button " style="background-color:#FF5151;font-family:Arial, Tahoma, 'Sans-serif';line-height: 32px;
+                                        font-size: 18px;
+                                        text-align: center;font-weight:700;color:#FFFFFF !important;border-bottom:2px solid #FF5151;display:inline-block;width:100%;padding-top:14px;padding-bottom:14px;text-decoration:none !important;max-width: 163px;min-width:163px; border-radius: 50px;margin-top: 8px;
+                                        margin-left: 38px; ">Заказать
 
                                     </a>
                                 </td>
@@ -199,51 +269,58 @@
         </tbody>
     </table>
 
-    <p style="line-height: 31px; font-size: 24px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 3px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0; margin-top: 0;
+    <p class="mobile-paddings" style="line-height: 31px; font-size: 24px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 3px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0; margin-top: 0;     margin-left: auto;
+    margin-right: auto;
 ">Где узнать, когда закончится срок действия вашего ФН?</p>
 
 
-    <ol style="margin-left: 20px;line-height: 24px;
+    <ol class="mobile-ol" style="margin-left: 20px;line-height: 24px;
     font-size: 16px;
     font-family:Arial, Tahoma, 'Sans-serif';    margin-top: 24px;
-    color: #333333;">
+    color: #333333;padding-right: 40px;     margin-left: auto;
+    margin-right: auto; width: 100%; max-width: 600px;">
         <li style="margin-bottom:  15px;">Зайдите на сайт ФНС и откройте карточку регистрации вашей ККТ. В нижней части есть дата её формирования. От этой
             даты и нужно отсчитывать 13 месяцев.
         </li>
         <li style="margin-bottom:  15px;">В личном кабинете ОФД найдите первый документ «Отчет о регистрации». Затем смотрим на дату формирования этого чека,
             она и будет датой активации вашего ФН.
         </li>
-        <li>Посмотрите на чек, при закрытии смены. Если на чеки появились предупреждающие надписи: «Ресурс фискального накопителя
+        <li style="margin-bottom: 15px;">Посмотрите на чек, при закрытии смены. Если на чеки появились предупреждающие надписи: «Ресурс фискального накопителя
             менее 30 дней» или «Память фискального накопителя заполнена» — накопитель нужно срочно менять.
         </li>
+        <li>Если у вас Эвотор, то зайдите в «Настройки» → «Обслуживание кассы» → «Дополнительные операции» → «Итог регистрации».
+            Касса распечатает отчет о регистрации кассы, дата регистрации — это и есть дата активации ФН.</li>
     </ol>
 
-    <p style="line-height: 24px; font-size: 16px; color: #FF5151; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 3px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 37px; margin-top: 41px;
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #FF5151; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 3px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 37px; margin-top: 41px;    margin-left: auto;
+    margin-right: auto;
 ">Не выбрасывайте использованный фискальный накопитель! По закону его нужно хранить 5 лет.</p>
 
 
-    <p style="line-height: 31px; font-size: 24px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 3px;
-padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0; margin-top: 0;
+    <p class="mobile-paddings" style="line-height: 31px; font-size: 24px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 3px;
+padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0; margin-top: 0;    margin-left: auto;
+margin-right: auto;
 ">Выберите фискальный накопитель</p>
-    <p style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
-padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;margin-top: 25px;
-">Онлайн-кассы работают с фискальными накопителями любого производителя. Если не планируете менять систему налогообложения
-        или вид деятельности, то смело берите такой же ФН, что и был ранее. Если запланировали изменения, то посмотрите какой
-        ФН вам подойдет:
-
-    </p>
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
+padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;margin-top: 25px;     margin-left: auto;
+margin-right: auto;
+">Онлайн-кассы работают с фискальными накопителями любого производителя. При выборе фискального накопителя подходящего
+        срока действия обратите внимание на п. 6 в статье 4.1 «
+        <a style="color: #2A7DD1;
+        text-decoration-color: rgba(42, 125, 209, 0.3)" href="http://www.consultant.ru/document/Cons_doc_LAW_42359/12a6477d0e22968564d9416e594a80202a7024db/#dst276">Требования к фискальному накопителю</a>» согласно 54-ФЗ: </p>
     <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;padding-left:0px;
-                padding-right: 10px; padding-top:0; padding-bottom: 0px    ;margin-left:auto;margin-right:auto; font-family:Arial, Tahoma, 'Sans-serif';">
+                padding-right: 10px; padding-top:0; padding-bottom: 0px    ;margin-left:auto;margin-right:auto; font-family:Arial, Tahoma, 'Sans-serif';padding-right: 40px; max-width:600px;">
         <tbody>
             <tr style="width:100%;max-width:600px;margin-left:auto;margin-right:auto;background-color:#FFFFFF;">
                 <td valign="top">
-                    <ul style="line-height: 24px;font-size:33px;color: #FF5151;margin-top: 9px; margin-left: 21px;margin-bottom: 6px;">
+                    <ul class="mobile-margin" style="line-height: 24px;font-size:33px;color: #FF5151;margin-top: 9px; margin-left: 21px;margin-bottom: 6px;">
                         <li>
                             <span style="      font-size:16px;color: #2B2A29; margin-top: 0px;
-">Фискальный накопитель на 13 месяцев — для ИП, которые торгуют подакцизными товарами и применяют
-                                ОСН.
+">Организациям и ИП на ОСН или занимающимся реализацией подакцизных товаров, а также работающих
+                                в автономном режиме (без передачи данных в ОФД), следует использовать фискальные накопители
+                                на 13 или 15 месяцев;
                             </span>
                         </li>
 
@@ -251,24 +328,15 @@ padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-c
                 </td>
 
             </tr>
+
             <tr style="width:100%;max-width:600px;margin-left:auto;margin-right:auto;background-color:#FFFFFF;">
                 <td valign="top">
-                    <ul style="line-height: 23px;font-size: 33px;color: #FF5151;margin-top: 0px;margin-left: 21px; margin-bottom: 3px;">
+                    <ul class="mobile-margin" style="line-height: 23px;font-size: 33px;color: #FF5151;margin-top: 0px;margin-left: 21px; margin-bottom: 4px;">
                         <li>
-                            <span style="  
-                            font-size:16px;color: #2B2A29  ;  margin-top:0px;">Фискальный накопитель на 15 месяцев — подойдет предпринимателям на ОСН, торгующим акцизными товарами
-                                или работающим сезонно/автономно.</span>
-                        </li>
-
-                    </ul>
-                </td>
-
-            </tr>
-            <tr style="width:100%;max-width:600px;margin-left:auto;margin-right:auto;background-color:#FFFFFF;">
-                <td valign="top">
-                    <ul style="line-height: 23px;font-size: 33px;color: #FF5151;margin-top: 0px;margin-left: 21px; margin-bottom: 4px;">
-                        <li>
-                            <span style="font-size:16px;color: #2B2A29; margin-top:0px;">Фискальный накопитель на 36 месяцев — предпринимателям, с услугами по УСН, ЕНВД, ПСН, ЕНСХ.</span>
+                            <span style="font-size:16px;color: #2B2A29; margin-top:0px;">Организации и ИП на УСН, ЕНВД, ЕСХН и Патенте, не осуществляющие торговлю подакцизными товарами,
+                                обязаны использовать фискальный накопитель на 36 месяцев. Исключение составляют организации
+                                и ИП с сезонным характером работы без подакцизов — они могут выбирать любой фискальный накопитель,
+                                13, 15 или 36 месяцев.</span>
                         </li>
 
                     </ul>
@@ -279,34 +347,51 @@ padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-c
         </tbody>
     </table>
 
-    <p style="line-height: 31px; font-size: 24px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 3px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 25px; margin-top: 33px;
+    <p class="mobile-paddings" style="line-height: 31px; font-size: 24px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif'; font-weight: 700;    padding-top: 3px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 25px; margin-top: 33px;     margin-left: auto;
+    margin-right: auto;
     ">Как самостоятельно заменить ФН</p>
 
-    <p style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;
-">Недостаточно просто заменить накопитель в корпусе кассы. Перед заменой не забудьте закрыть архив ФН на кассе и отправить
-        все документы в ОФД. После, смело меняйте накопитель на новый. Когда закончите, зайдите в личный кабинет ФНС и внесите
-        данные с чеков закрытия и фискализации нового ФН.
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;    margin-left: auto;
+    margin-right: auto;
+">Недостаточно просто физически заменить ФН в кассе. Перед началом процедуры замены, убедитесь, что все документы были
+        отправлены в ОФД, а после — закройте архив старого ФН. Затем подайте заявление о перерегистрации кассы в личном кабинете
+        ФНС. Вбейте данные с отчета о закрытии старого ФН и данные по новому. Теперь смело меняйте ФН в кассе. Выполните
+        перерегистрацию на самом терминале Эвотор и завершите перерегистрацию в личном кабинете ФНС, добавив данные с отчета
+        о перерегистрации самого терминала.
     </p>
-    <p style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;     margin-left: auto;
+    margin-right: auto;
+">Если дата производства кассы до 1 января 2018 года, то, перед заменой ФН потребуется перепрошивка кассы под ФФД 1.05.
+        Переход на ФФД 1.05, согласно законодательству, является обязательным в срок до 1 января 2019 года.
+    </p>
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;     margin-left: auto;
+    margin-right: auto;
+">Перепрошить онлайн-кассу может только специалист АСЦ, потому что это предполагает вскрытие корпуса кассы. Мы рекомендуем
+        делать перепрошивку под ФФД 1.05 до замены ФН, чтобы в будущем не потребовалось заменять его еще раз.
+    </p>
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 0;     margin-left: auto;
+    margin-right: auto;
 ">Замена ФН ответственный момент, если боитесь ошибиться и испортить новый ФН — лучше поручите это специалистам. Они возьмут
         все риски на себя.
     </p>
-    <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:23px;padding-bottom:20px;    padding-left: 45px;
+    <table class="mobile-paddings" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:23px;padding-bottom:20px;    padding-left: 45px;
     padding-right: 35px;">
         <tbody>
             <tr style="">
-                <td class="column-2" width="110px" style="vertical-align: top;
+                <td class="column-2 mobile-price-img" width="110px" style="vertical-align: top;
                 padding-top: 27px;">
                     <img style="display: block;margin-right: auto;height:auto;min-width: 50px;max-width:80px;width: 100%;" src="http://mailer.lad24.ru/uploadimages/image/Registration.png"
-                        alt="Фискальный накопитель на 13 месяцев с договором ОФД на 1 год">
+                        alt="Перерегистрация ФН на сайте ФНС">
                 </td>
                 </td>
                 <td class="column-2" width="">
-                    <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:21px;padding-bottom:20px;    padding-left: 52px;
-                        padding-right: 35px;">
+                    <table class=" mobile-table-price" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:21px;padding-bottom:20px;    padding-left: 52px;
+                        padding-right: 0px;">
                         <tbody>
                             <tr style="">
                                 <td class="">
@@ -320,10 +405,10 @@ padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-c
                                     font-size: 40px; font-family:Arial, Tahoma, 'Sans-serif';font-weight:700;color: #333333;    margin: 0; vertical-align: bottom;">1000
                                         <img src="http://mailer.lad24.ru/uploadimages/image/fn-rur.png" alt="рублей">
                                     </p>
-                                    <a href="#" title="Заказать" class="" style="background-color:#FF5151;font-family:Arial, Tahoma, 'Sans-serif';line-height: 32px;
+                                    <a href="#" title="Заказать" class="mobile-button " style="background-color:#FF5151;font-family:Arial, Tahoma, 'Sans-serif';line-height: 32px;
                                         font-size: 18px;
                                         text-align: center;font-weight:700;color:#FFFFFF !important;border-bottom:2px solid #FF5151;display:inline-block;width:100%;padding-top:14px;padding-bottom:14px;text-decoration:none !important;max-width: 163px;min-width:163px; border-radius: 50px;margin-top: 8px;
-                                        margin-left: 30px; ">Заказать
+                                        margin-left: 73px; ">Заказать
 
                                     </a>
                                 </td>
@@ -340,8 +425,9 @@ padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-c
     </table>
 
 
-    <p style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
-    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 48px;margin-top: 10px;
+    <p class="mobile-paddings" style="line-height: 24px; font-size: 16px; color: #333333; font-family:Arial, Tahoma, 'Sans-serif';  padding-top: 0px;
+    padding-left: 40px; padding-right: 40px; width:100%;max-width:600px;background-color:#FFFFFF;margin-bottom: 48px;margin-top: 10px;     margin-left: auto;
+    margin-right: auto;
 ">У нас много персональных предложений.
         <a href="https://kkt365.ru/catalog/services" style="color:#2A7DD1; text-decoration-color: rgba(42, 125, 209, 0.3)">Оставьте заявку</a>, мы проконсультируем и поможем подобрать фискальный накопитель.
     </p>
@@ -358,7 +444,7 @@ margin-bottom: 0;padding-left: 40px; padding-right:40px;background-color: #FFF6D
 
 
 
-    <table border="0" cellpadding="0" cellspacing="0" style="width:100%;margin-left:auto;margin-right:auto;padding-top:27px;padding-bottom:0px;    padding-left: 40px;
+    <table border="0" cellpadding="0" cellspacing="0" style="width:100%; max-width:600px;margin-left:auto;margin-right:auto;padding-top:27px;padding-bottom:0px;    padding-left: 40px;
     padding-right: 20px; background-color: #FFF6DE; table-layout: fixed;">
         <tbody>
             <tr style="display: block;">

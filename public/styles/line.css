@@ -45,7 +45,7 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 10px 30px 10px 60px;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     transition: width 0.7s;
     overflow: hidden;
@@ -123,6 +123,11 @@
 
 .container-with-total-cost .total-cost-content-toggle:hover {
     background-image: initial;
+}
+
+.container-with-total-cost .total-cost-content-toggle:hover::before {
+    border-color: #ffffff;
+    background-image: url("https://kkt365.ru/themes/evotor/assets/i/icon-close-white.svg");
 }
 
 .container-with-total-cost .total-cost-content-toggle::before,
