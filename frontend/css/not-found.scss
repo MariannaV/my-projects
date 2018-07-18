@@ -4,6 +4,9 @@
     font-family: "Museo Sans", sans-serif;
     overflow-x: hidden;
     color: #333333;
+    @media (min-width: 1600px) {
+        padding-bottom: 80px;
+    }
 }
 
 .container-with-not-found-page-content {
@@ -155,7 +158,8 @@
     color: #A0A4AD;
     &>a {
         color: #A0A4AD;
-        text-decoration-color: #A0A4AD !important;
+        text-decoration: underline;
+        text-decoration-color: #A0A4AD;
     }
 }
 
