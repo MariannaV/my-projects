@@ -15,7 +15,7 @@
     padding-right: 20px;
     padding-bottom: 20px;
     @media(min-width: 1600px) {
-        padding-bottom: 80px;
+        padding-bottom: 24px;
         padding-top: 68px;
     }
 }
@@ -47,7 +47,7 @@
 }
 
 .not-found-page-h1+.not-found-page-p {
-    margin-top: 20px;
+    margin-top: 14px;
     @media (min-width: 1600px) {
         margin-top: 25px;
         padding-right: 290px;
@@ -76,6 +76,7 @@
         padding-left: 28px;
         padding-right: 28px;
         padding-bottom: 25px;
+        box-shadow: 0 1px 18px rgba(128, 132, 153, 0.25);
         @media(min-width: 1600px) {
             width: 335px;
             height: 376px;
@@ -84,19 +85,19 @@
             padding-right: 36px;
             padding-bottom: 28px;
         }
-    }
-    &>.application-form-title {
-        font-family: 'museo_sans_cyrl500', Arial, serif;
-        line-height: normal;
-        font-size: 18px;
-        @media (min-width: 1600px) {
-            line-height: 39px;
-            font-size: 23px;
-        }
-        &+.application-form-with-inputs {
-            margin-top: 16px;
+        &>.application-form-title {
+            font-family: 'museo_sans_cyrl500', Arial, serif;
+            line-height: normal;
+            font-size: 18px;
             @media (min-width: 1600px) {
-                margin-top: 28px;
+                line-height: normal;
+                font-size: 22px;
+            }
+            &+.application-form-with-inputs {
+                margin-top: 16px;
+                @media (min-width: 1600px) {
+                    margin-top: 28px;
+                }
             }
         }
     }
@@ -131,7 +132,11 @@
     height: 40px;
     line-height: normal;
     font-size: 16px;
-    font-family: 'museo_sans_cyrl500', Arial, serif;
+    font-family: 'museo_sans_cyrl500', Arial, serif; // margin: 0px;
+    @media (max-width: 1599px) {
+        margin: 0;
+        margin-bottom: 18px;
+    }
 }
 
 .placeholder-form {
@@ -149,6 +154,9 @@
     color: #FFFFFF;
     height: 60px;
     border-radius: 30px;
+    @media(max-width: 1599px) {
+        margin-top: 0;
+    }
 }
 
 .application-user-agreement-text {
@@ -159,7 +167,10 @@
     &>a {
         color: #A0A4AD;
         text-decoration: underline;
-        text-decoration-color: #A0A4AD;
+        text-decoration-color: rgba(160, 164, 173, 0.3);
+    }
+    @media(max-width:1599px) {
+        margin-top: 6px;
     }
 }
 
@@ -179,6 +190,9 @@
         border-radius: 3px;
         border: 1px solid #A0A4AD;
         cursor: pointer;
+        @media(max-width: 1599px) {
+            margin-top: 6px;
+        }
     }
 }
 
@@ -197,17 +211,28 @@
 }
 
 .container-with-banners {
+    padding: 0px;
     display: grid;
-    grid-template-columns: repeat(1, 320px);
+    grid-template-columns: 1fr;
     grid-gap: 8px;
+    @media(min-width: 768px) {
+        grid-template-columns: repeat(auto-fit, 340px);
+    }
     @media(min-width: 1600px) {
         display: grid;
         grid-template-columns: repeat(3, 372px);
-        grid-gap: 20px;
+        grid-gap: 20px; // padding-left: 15vw;
+        // padding-right: 15vw;
     }
 }
 
+section.container.container-with-banners::before {
+    content: none;
+}
+
 .block-with-banner {
+    display: flex;
+    flex-direction: column;
     height: 310px;
     background-color: gold;
     padding-top: 28px;
@@ -215,17 +240,56 @@
     padding-right: 20px;
     padding-bottom: 44px;
     @media(min-width: 1600px) {
+        height: 346px;
         padding-top: 19px;
         padding-left: 37px;
         padding-right: 36px;
         padding-bottom: 36px;
+        border-radius: 4px;
     }
     @media(max-width:1599px) {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    &.dark-blue {
+        background: radial-gradient(701.57px at 50% 45.98%, #C4E8FC 0%, #5D97EE 100%), #373CA3;
+        @media(min-width: 1600px) {
+            background: radial-gradient(721.68px at 50% 50%, #C4E8FC 0%, #649CEF 100%), #F4F4F4;
+        }
+    }
+    &.light-blue {
+        background: radial-gradient(701.57px at 50% 45.98%, #A6F9FD 0%, #31A7CB 100%), #373CA3;
+        @media(min-width: 1600px) {
+            background: radial-gradient(721.68px at 50% 50%, #A6F9FD 0%, #2BA2C8 100%), #F4F4F4;
+        }
+    }
+    &.red {
+        background: radial-gradient(701.57px at 50% 45.98%, #FFD9D8 0%, #EB6964 100%), #373CA3;
+        @media(min-width: 1600px) {
+            background: radial-gradient(721.68px at 50% 50%, #FFD9D8 0%, #EB6B65 100%), #F4F4F4;
+        }
+    }
+    &.yellow {
+        background: radial-gradient(701.57px at 50% 45.98%, #FFE89C 0%, #FFB84C 100%), #373CA3;
+        @media(min-width: 1600px) {
+            background: radial-gradient(721.68px at 50% 50%, #FFE89C 0%, #FEB547 100%), #F4F4F4;
+        }
+    }
+    &.green {
+        background: radial-gradient(701.57px at 50% 45.98%, #C5FDB7 0%, #44C24A 100%), #373CA3;
+        @media(min-width: 1600px) {
+            background: radial-gradient(721.68px at 50% 50%, #C5FDB7 0%, #3DBE44 100%), #F4F4F4;
+        }
+    }
+    &.purple {
+        background: radial-gradient(701.57px at 50% 45.98%, #FFBCE1 0%, #DB58A0 100%), #373CA3;
+        @media(min-width: 1600px) {
+            background: radial-gradient(772.81px at 53.09% 50.87%, #FFBCE1 0%, #D8529C 100%), #F4F4F4;
+        }
+    }
     &>.block-with-banner-title {
+        letter-spacing: -0.04em;
         font-size: 34px;
         text-align: center;
         font-family: 'museo_sans_cyrl700', Arial, serif;
@@ -237,17 +301,20 @@
         }
         &+.block-with-banner-description {
             margin-top: 17px;
-            @media (min-width: 1600px) {
-                margin-top: 28px;
-            }
         }
     }
     &>.block-with-banner-description {
+        font-family: 'museo_sans_cyrl300', Arial, sans-serif;
         line-height: 22px;
         font-size: 16px;
         text-align: center;
         @media(min-width: 1600px) {
+            margin-top: 15px;
             text-align: left;
+            margin-bottom: 20px;
+        }
+        &>span {
+            font-family: 'museo_sans_cyrl700', Arial, serif;
         }
         &.mobile-description {
             @media(min-width: 1600px) {
@@ -274,5 +341,12 @@
         padding-right: 40px;
         padding-top: 14px;
         padding-bottom: 14px;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
+}
+
+.container-with-not-found-page-content+.container-with-banners {
+    margin-top: 44px;
 }
