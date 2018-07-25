@@ -490,12 +490,6 @@
     }
 }
 
-/* .details-block>input:not(:checked)~.details-content {*/
-
-/*     display: none;*/
-
-/* }*/
-
 .details-block>input:not(:checked)~.details-content {
     max-height: 0;
 }
@@ -525,7 +519,6 @@
     border-top: 1px solid #b8c0d1;
     border-bottom: 1px solid #b8c0d1;
     background-color: #edeff5;
-    /* padding-bottom: 20px;*/
     padding-left: 0;
     padding-right: 0
 }
@@ -541,9 +534,7 @@
     width: 100%;
 }
 
-.nav-block {
-    /* padding-bottom: 15px;*/
-}
+.nav-block {}
 
 .nav-block>label {
     font-size: 20px;
@@ -640,20 +631,15 @@
     background-position-x: 21%;
     background-position-y: 50%;
     font-size: 18px;
-    font-weight: 600/* &.end {*/
-    /*     padding-left: 50px;*/
-    /*     background-position-x: 21%;*/
-    /* }*/
+    font-weight: 600;
 }
 
 .button-basket-popup::after {
     content: "В корзину";
-    /*  margin-left: 20px; */
 }
 
 .button-basket-popup.active {
     margin-left: 0;
-    /* margin-right: 20px;*/
     background-color: #ffffff;
     border: 1px solid #ffffff;
     color: #ff7800;
@@ -871,7 +857,6 @@
     max-width: 100%;
     margin: 0 auto;
     max-height: 100%;
-    /* padding-bottom: 100px; */
     object-fit: contain;
     @media(max-width: 767px) {
         max-width: 230px;
@@ -885,7 +870,6 @@
     border: 1px solid #a0a4ad;
     border-radius: 4px;
     padding: 20px;
-    /* display: flex;*/
     flex-direction: column;
     text-align: center;
     position: fixed;
@@ -1058,8 +1042,6 @@
 
 @media (min-width: 769px) and (min-width: 992px) {
     .button-basket-outside {
-        /* top: 7%;*/
-        /* right: 5%;*/
         position: absolute;
         top: 65px;
         right: 80px;
@@ -1083,7 +1065,6 @@
 
 @media (min-width: 1024px) {
     .container-with-products {
-        /* grid-template-columns: repeat(auto-fit, 370px);*/
         grid-template-columns: repeat(3, 1fr)
     }
 }
@@ -1099,8 +1080,6 @@
 @media (min-width: 1600px) {
     .for-buyer-item-amount-minus,
     .for-buyer-item-amount-plus {
-        /* min-width: 32px;*/
-        /* min-height: 32px;*/
         min-width: 40px;
         min-height: 40px;
     }
@@ -1181,14 +1160,6 @@
         display: none
     }
 }
-
-/* @media (max-width: 767px) {
-
-    
-}
- */
-
-/* @media (max-width: 1023px) { */
 
 @media (max-width: 767px) {
     .items-with-goods::before {
@@ -1290,5 +1261,12 @@
 @media(max-width:767px) {
     .details-content .last-elem {
         border-top: 1px solid #b8c0d1;
+    }
+}
+
+.get-invoice {
+    @media(min-width: 992px) and (max-width:1090px) {
+        padding-top: 15px;
+        padding-left: 18px;
     }
 }
