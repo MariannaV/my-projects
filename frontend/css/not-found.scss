@@ -1,7 +1,7 @@
 @import "helpers/_postcss-reset.scss";
 @import "fonts/fonts.scss";
 .not-found-page {
-    font-family: "Museo Sans", sans-serif;
+    font-family: 'museo_sans_cyrl300', Arial, serif;
     overflow-x: hidden;
     color: #333333;
     @media (min-width: 1600px) {
@@ -175,7 +175,7 @@
     }
 }
 
-.user-agreement {
+.user-agreement-label {
     display: grid;
     grid-template-columns: 10px 1fr;
     grid-gap: 9px;
@@ -203,7 +203,7 @@
     filter: opacity(0.4);
 }
 
-.user-agreement-checkbox:checked~.user-agreement::before {
+.user-agreement-checkbox:checked~.user-agreement-label::before {
     border-color: #FF7800;
     /* /content: "\2713"; */
     background-image: url("https://kkt365.ru/themes/evotor/assets/i/checked.svg");
