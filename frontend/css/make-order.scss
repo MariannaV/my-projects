@@ -20,8 +20,12 @@
         font-size: 12px; // font-weight: 300;font-family: Museo Sans Cyrl;
         color: #333333;
         font-family: 'museo_sans_cyrl300', Arial, serif;
-        &>span {
+        &>p {
             color: #FF7800;
+        }
+        &>span {
+            margin-left: 3px;
+            margin-right: 3px;
         }
     }
     &+.title-how-make-an-order {
@@ -39,6 +43,7 @@
 }
 
 .title-how-make-an-order {
+    padding-right: 10px;
     line-height: normal;
     font-size: 28px; // font-weight: 700;
     font-family: 'museo_sans_cyrl700', Arial, serif;
@@ -60,12 +65,16 @@
     }
     &>a {
         line-height: 26px;
-        font-size: 18px;
+        font-size: 16px;
         display: block;
         color: #2A7DD1;
         font-family: 'museo_sans_cyrl500', Arial, serif;
         text-decoration: underline;
         text-decoration-color: rgba(42, 125, 209, 0.3);
+        @media(min-width: 1600px) {
+            line-height: 26px;
+            font-size: 18px;
+        }
     }
     &+.order-block-with-img {
         margin-top: 55px;
@@ -85,6 +94,10 @@
     font-size: 16px;
     color: #333333;
     font-family: 'museo_sans_cyrl300', Arial, serif;
+    margin-top: 30px;
+    @media(min-width: 1600px) {
+        margin-top: 17px;
+    }
     &>li {
         list-style-position: inside;
         &>a {
@@ -107,9 +120,9 @@
         }
     }
     &>li+li {
-        margin-top: 15px;
+        margin-top: 18px;
         @media(min-width: 1600px) {
-            margin-top: 30px;
+            margin-top: 28px;
         }
     }
     @media(min-width: 1599px) {
@@ -117,13 +130,16 @@
         font-size: 18px;
     }
     &+a {
-        margin-top: 42px;
+        margin-top: 36px;
+        @media(min-width: 1600px) {
+            margin-top: 42px;
+        }
     }
 }
 
 .order-block-with-img {
-    max-width: 344px;
-    max-height: 336px;
+    max-width: 280px;
+    max-height: 273px;
     @media(min-width: 1600px) {
         min-width: 344px;
         min-height: 336px;

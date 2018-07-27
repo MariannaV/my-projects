@@ -4,8 +4,6 @@
     overflow-x: hidden;
     color: #333333;
     padding-top: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
     padding-bottom: 56px;
     @media(min-width: 1600px) {
         padding-top: 27px;
@@ -13,27 +11,36 @@
         padding-left: 0;
         padding-right: 0;
     }
-    &>.container+.block-with-requisites {
-        margin-top: 30px;
-        @media(min-width: 1600px) {
-            margin-top:40px;
+    @media(min-width: 1600px) {
+        .container {
+            padding-left: 0;
         }
-    }
-    &>.block-with-requisites+.payment-block-with-links {
-        margin-top: 40px;
     }
 }
 
 .payment-block-with-links {
     &>a {
-        line-height: 26px;
-        font-size: 18px;
+        line-height: 31px;
+        font-size: 16px;
         display: block;
         color: #2A7DD1;
         font-family: 'museo_sans_cyrl500', Arial, serif;
         text-decoration: underline;
         text-decoration-color: rgba(42, 125, 209, 0.3);
+        @media(min-width: 1600px) {
+            line-height: 26px;
+            font-size: 18px;
+        }
     }
+    @media(min-width:1600px) {
+        a+a {
+            margin-top: 15px;
+        }
+    }
+}
+
+.block-with-requisites+.payment-block-with-links {
+    margin-top: 40px;
 }
 
 .page-nav {
@@ -43,12 +50,16 @@
         font-size: 12px; // font-weight: 300;font-family: Museo Sans Cyrl;
         color: #333333;
         font-family: 'museo_sans_cyrl300', Arial, serif;
-        &>span {
+        &>p {
             color: #FF7800;
+        }
+        &>span {
+            margin-left: 3px;
+            margin-right: 3px;
         }
     }
     &+.title-how-to-pay-an-order {
-        margin-top: 15px;
+        margin-top: 32px;
         @media(min-width: 1600px) {
             margin-top: 6px;
         }
@@ -57,7 +68,7 @@
 
 .block-with-all-information-about-payment {
     @media(min-width: 1600px) {
-        display: flex;
+        display: flex !important;
     }
 }
 
@@ -85,6 +96,7 @@
     font-family: 'museo_sans_cyrl300', Arial, serif;
     @media(min-width: 1600px) {
         font-size:18px;
+        max-width: 658px;
     }
     &>li {
         list-style-position: inside;
@@ -99,7 +111,7 @@
         }
     }
     &>li+li {
-        margin-top: 15px;
+        margin-top: 17px;
         @media(min-width: 1600px) {
             margin-top: 30px;
         }
@@ -127,7 +139,7 @@
     background-size: 100%;
     outline: none; // margin-left: auto; // margin-right: auto;
     margin-bottom: 15px;
-    margin-top: 20px;
+    margin-top: 16px;
     @media(min-width: 1600px) {
         width:295px;
         margin-left: 0;
@@ -142,14 +154,17 @@
     grid-gap: 10px;
     @media(min-width: 1600px) {
         grid-template-columns: repeat(auto-fit, 70px);
-        grid-gap: 19px;
+        row-gap: 30px;
+        column-gap: 20px;
     }
 }
 
 .block-with-contracts {
-    padding-right: 90px;
+    padding-right: 26px;
     &>p {
         font-family: 'museo_sans_cyrl700', Arial, serif;
+        font-size: 16px;
+        line-height: 23px;
         @media(min-width: 1600px) {
             font-size: 18px;
         }
@@ -166,7 +181,7 @@
 }
 
 .information-how-to-pay-an-order+.block-with-contracts {
-    margin-top: 35px;
+    margin-top: 29px;
 }
 
 .block-with-requisites {
@@ -178,6 +193,7 @@
         padding-right: 0;
         padding-top: 35px;
         padding-bottom: 40px;
+        margin-top: 32px;
     }
     p {
         line-height: 23px;
@@ -190,19 +206,26 @@
             font-family: 'museo_sans_cyrl700', Arial, serif;
         }
         &+p {
-            margin-top: 20px;
+            margin-top: 13px;
+            @media (min-width: 1600px) {
+                margin-top: 22px;
+            }
         }
     }
     .block-with-requisites-title {
         font-family: 'museo_sans_cyrl500', Arial, serif;
         line-height: normal;
         font-size: 24px;
+        padding-right: 45px;
         @media(min-width: 1600px) {
             line-height: 46px;
             font-size: 36px;
         }
         &+p {
-            margin-top: 15px;
+            margin-top: 34px;
+            @media(min-width: 1600px) {
+                margin-top: 40px;
+            }
         }
     }
 }
@@ -210,10 +233,29 @@
 .payment-block-with-img {
     max-width: 280px;
     max-height: 305px;
+    @media(max-width: 767px) {
+        position: absolute;
+        bottom: 50px;
+    }
+    @media(min-width:1600px) {
+        max-width: 360px;
+        max-height: 390px;
+        margin-left: 135px;
+        margin-top: 51px;
+    }
 }
 
 .payment-page {
+    @media(max-width: 767px) {
+        // display: flex;
+        position: relative;
+        padding-bottom: 390px;
+    }
+}
+
+div+.block-with-requisites {
+    margin-top: 30px;
     @media(min-width: 1600px) {
-        display: flex;
+        margin-top:40px;
     }
 }
