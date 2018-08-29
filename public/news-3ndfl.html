@@ -14,39 +14,49 @@
             table-layout: fixed;
         }
 
-        td[class="2-column"] {
-            padding: 10px;
-        }
-
-        @media (max-width: 599px) {
-            td[class="2-column"] {
-                display: block;
-                padding: 10px;
-                vertical-align: top;
-            }
-        }
-
-        @media only screen and (min-width: 600px) {
-            td[class="2-column"] {
-                /* display: inline-block; */
-                /* width: 49%; */
-                /* max-width: 49%; */
-                /* min-width: 49%; */
-            }
-        }
 
         * {
             box-sizing: border-box;
+        }
+
+
+        @media (max-width: 499px) {
+
+            .mobile-paddings {
+                padding-left: 40px !important;
+                padding-right: 40px !important;
+            }
+
+        }
+
+
+
+
+        @media (max-width: 599px) {
+            .column-2 {
+                display: block;
+
+            }
+
+            .mobile-text {
+                text-align: center;
+            }
+
+
+            .title-paddings {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
         }
     </style>
 
 
 </head>
 
-<body "margin: 0; overflow-x: hidden; max-width: 600px;">
+<body "margin-left:auto; margin-right: auto; overflow-x: hidden; max-width: 600px; width: 100%;">
     <!-- Шапка письма -->
-    <table style="width:100%;background-color:#007DDD;padding-top:20px;padding-bottom:20px;" cellspacing="0" cellpadding="0"
-        border="0" bgcolor="#007DDD" align="center">
+    <table style="width:100%;background-color:#007DDD;padding-top:20px;padding-bottom:20px;max-width: 600px;" cellspacing="0"
+        cellpadding="0" border="0" bgcolor="#007DDD" align="center">
         <tbody>
             <tr>
                 <td width="20">&nbsp;</td>
@@ -67,56 +77,63 @@
     </table>
     <!-- Конец шапки -->
     <!--Контент-->
-    <p style="color:#007DDD;text-transform:uppercase;line-height:22px;font-size:23px;font-family:Arial,Tahoma,'Sans-serif';display:inline-block;background-color:#EEF8FE;width: 100%;text-align:center;margin:0;padding-top:20px;padding-bottom:10px;">Читайте о 3-НДФЛ</p>
+    <p style="color:#007DDD;text-transform:uppercase;line-height:22px;font-size:23px;font-family:Arial,Tahoma,'Sans-serif';display:block;background-color:#EEF8FE;width: 100%;text-align:center;margin:0;padding-top:20px;padding-bottom:20px;max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;">Читайте о 3-НДФЛ</p>
     <!--конец заголовка-->
-    <table border="0" cellpadding="0" cellspacing="0" style="background-color:#EEF8FE;width: 100%;">
-        <tbody>
-            <tr style="width:100%;max-width:600px;margin-left:auto;margin-right:auto;">
-                <td class="2-column" valign="top">
+    <div class="mobile-paddings" style="padding-left: 75px; padding-right: 75px; background-color: #EEF8FE;max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;">
+        <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FFFFFF;width: 100%;">
+            <tbody>
+                <tr style="width:100%;max-width:600px;margin-left:auto;margin-right:auto;">
+                    <td class="column-2" valign="top" width="100" style="margin-left: auto; margin-right: auto; ">
 
-                    <p style="width:290px;max-width:100%;height:57px; margin-left: auto;margin-right:auto;display:block;
-font-family:Tahoma, 'Sans-serif';font-size:25px;line-height:29px;color:#E8E8E8; background-color: #FFFFFF">15/02</p>
-
-
-                </td>
-                <td class="2-column" valign="top">
-                    <p style="width:290px;max-width:100%;height:57px; margin-left: auto;margin-right:auto;display:block;font-family:Tahoma, 'Sans-serif';font-size:23px;line-height:27px;color:#233D4D;background-color: #FFFFFF;">Налоговый вычет на детей</p>
+                        <p class="mobile-text" style="margin-left: auto;margin-right:auto;display:block;
+font-family:Tahoma, 'Sans-serif';font-size:25px;line-height:29px;color:#E8E8E8; background-color: #FFFFFF;    padding-left: 15px;">15/02</p>
 
 
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                    </td>
+                    <td class="column-2" valign="top">
+                        <p class="mobile-text title-paddings" style="width:290px;max-width:100%; margin-left: auto;margin-right:auto;display:block;font-family:Tahoma, 'Sans-serif';font-size:23px;line-height:27px;color:#233D4D;background-color: #FFFFFF; padding-right: 40px;">Налоговый вычет на детей</p>
+
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <!--Картинка-->
-    <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin-left:auto;margin-right:auto;padding-top:20px;padding-bottom:20px;">
-        <tr style="display: block;">
-            <td>
+    <div class="mobile-paddings" style="max-width: 600px; width: 100%;margin-left: auto;margin-right: auto;padding-left: 75px; padding-right: 75px; background-color: #EEF8FE">
+        <img style="display: block;margin-left: auto;margin-right: auto;height:auto;min-width: 163px;width: 100%;" src="https://gallery.mailchimp.com/32550544422dd61063e59ba11/images/8aacef12-2198-4879-a18d-cf2521eccb30.png"
+            alt=" Налоговый вычет на детей">
+    </div>
 
-                <img style="display: block;margin-left: auto;margin-right: auto;height:auto;min-width: 163px;width: 100%;" src="https://gallery.mailchimp.com/32550544422dd61063e59ba11/images/8aacef12-2198-4879-a18d-cf2521eccb30.png"
-                    alt=" Налоговый вычет на детей">
-            </td>
-
-
-        </tr>
-    </table>
     <!--Окончание картинки-->
 
 
-    <div style="background-color:#EEF8FE;width:100%;text-align:center;padding-top: 26px;padding-bottom: 26px;">
-        <p style="font-family:Arial, Tahoma, 'Sans-serif';font-size:12px;line-height:14px;color:#8A91A4; background-color: #FFFFFF;">
-        Со своей официальной зарплаты вы платите подоходный налог в 13%. Можно уменьшить сумму налога, если у вас есть дети.
+    <div class="mobile-paddings" style="background-color:#EEF8FE;width:100%;text-align:center;padding-top: 0px;padding-bottom:10px; max-width: 600px; width: 100%; margin-left: auto; margin-right: auto; padding-left: 75px; padding-right: 75px;">
+        <p class="mobile-paddings" style="font-family:Arial, Tahoma, 'Sans-serif';font-size:12px;line-height:14px;color:#8A91A4; background-color: #FFFFFF;margin-top: 0;padding-top: 28px;padding-bottom: 28px;padding-left: 70px; padding-right: 70px; margin-bottom:0;">
+            Со своей официальной зарплаты вы платите подоходный налог в 13%. Можно уменьшить сумму налога, если у вас есть дети.
         </p>
+
+        <p style="background-color: #FFFFFF; margin-top: 0; padding-bottom: 40px;">
+            <a href="https://lad-3ndfl.ru/news/detail/5" title="Налоговый вычет на детей" style="background-color:#8DD652;border-radius:4px;text-transform:uppercase;font-family:Arial, Tahoma, 'Sans-serif';font-size:14px;line-height:16px;font-weight:700;color:#FFFFFF !important;border-bottom:2px solid #65B432;display:block;width:100%;padding-top:12px;padding-bottom:9px;text-decoration:none !important;width: 122px; margin-left: auto; margin-right: auto;">Читать</a>
+        </p>
+
+
+
     </div>
 
     <!--Перейти  ко все статьям-->
-    <div style="background-color:#EEF8FE;width:100%;text-align:center;padding-top: 26px;padding-bottom: 26px;">
+    <div style="background-color:#EEF8FE;width:100%;text-align:center;padding-top: 16px;padding-bottom: 26px; max-width: 600px; margin-left: auto; margin-right: auto;">
         <a href="https://lad-3ndfl.ru/news" title="Перейти ко всем статьям" style="font-family:Arial, Tahoma, 'Sans-serif';font-size:12px;line-height:14px;color:#007DDD;">Перейти ко всем статьям
             <img src="http://mailer.lad24.ru/uploadimages/image/sbis-vector1.png" style="width:6px; height:auto;" alt=">">
         </a>
     </div>
     <!-- подвал -->
-    <table style="height:92px;width:100%;background-color:#233D4D;padding-top:20px;padding-bottom:20px;" width="600" cellspacing="0"
-        cellpadding="0" border="0" bgcolor="#233D4D" align="center">
+    <table style="height:92px;width:100%;background-color:#233D4D;padding-top:20px;padding-bottom:20px; max-width: 600px;margin-left: auto; margin-right: auto;"
+        cellspacing="0" cellpadding="0" border="0" bgcolor="#233D4D" align="center">
         <tbody>
             <tr>
                 <td width="20">&nbsp;</td>
