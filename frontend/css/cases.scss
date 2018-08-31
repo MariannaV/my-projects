@@ -1,16 +1,27 @@
 .cashbox-categories {
     display: block;
     background-color: #f7f8fb;
-    padding-top: 76px;
+    padding-top: 48px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 106px;
-    @media(min-width: 768px) {
-        padding-bottom: 64px;
+    padding-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+    .cashbox-categories {
+        padding-bottom: 106px;
+        padding-top: 94px;
     }
 }
 
-&>h2 {
+@media (min-width: 768px) {
+    .cashbox-categories {
+        padding-left: 13vw;
+        padding-right: 13vw;
+    }
+}
+
+.cashbox-categories>h2 {
     font-size: 36px;
     line-height: 1.4;
     font-weight: 500;
@@ -18,9 +29,93 @@
     color: #22253d;
 }
 
-.cashbox-categories>h2+.cashbox-categories-container {
+@media (max-width: 767px) {
+    .cashbox-categories>h2>span {
+        display: none;
+    }
+}
+
+.cashbox-categories+.cashbox-categories-container {
     margin-top: 37px;
-    @media(min-width: 768px) {
+}
+
+@media (min-width: 768px) {
+    .cashbox-categories+.cashbox-categories-container {
         margin-top: 50px;
     }
+}
+
+.cashbox-categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cashbox-category-title {
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+    z-index: 2;
+    font-family: 'museo_sans_cyrl500', Arial, serif;
+    line-height: 18px;
+    font-size: 14px;
+    height: 37px;
+}
+
+@media (min-width: 768px) {
+    .cashbox-category-title {
+        line-height: 27px;
+        font-size: 20px;
+        height: 56px;
+    }
+}
+
+.cashbox-category {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: white;
+    color: #333333;
+    position: relative;
+    width: 135px;
+    height: 128px;
+    padding: 19px 30px 17px 30px;
+}
+
+a.cashbox-category {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .cashbox-category {
+        width: 274px;
+        height: 260px;
+        padding: 58px 32px 29px 32px;
+    }
+}
+
+.cashbox-category-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    align-self: center;
+}
+
+.cashbox-category-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.7s ease-out;
+    max-width: 100%;
+}
+
+.cashbox-category:hover .cashbox-category-placeholder {
+    opacity: 1;
+    transform: scale(1.1);
 }
